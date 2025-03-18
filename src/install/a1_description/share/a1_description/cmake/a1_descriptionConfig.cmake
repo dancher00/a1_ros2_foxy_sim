@@ -1,0 +1,1 @@
+/home/danya/a1_ros2_foxy_sim/src/build/a1_description/ament_cmake_core/a1_descriptionConfig.cmake

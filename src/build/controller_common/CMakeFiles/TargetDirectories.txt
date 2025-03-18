@@ -1,0 +1,10 @@
+/home/danya/a1_ros2_foxy_sim/src/build/controller_common/CMakeFiles/install/strip.dir
+/home/danya/a1_ros2_foxy_sim/src/build/controller_common/CMakeFiles/install/local.dir
+/home/danya/a1_ros2_foxy_sim/src/build/controller_common/CMakeFiles/edit_cache.dir
+/home/danya/a1_ros2_foxy_sim/src/build/controller_common/CMakeFiles/test.dir
+/home/danya/a1_ros2_foxy_sim/src/build/controller_common/CMakeFiles/install.dir
+/home/danya/a1_ros2_foxy_sim/src/build/controller_common/CMakeFiles/list_install_components.dir
+/home/danya/a1_ros2_foxy_sim/src/build/controller_common/CMakeFiles/rebuild_cache.dir
+/home/danya/a1_ros2_foxy_sim/src/build/controller_common/CMakeFiles/controller_common.dir
+/home/danya/a1_ros2_foxy_sim/src/build/controller_common/CMakeFiles/controller_common_uninstall.dir
+/home/danya/a1_ros2_foxy_sim/src/build/controller_common/CMakeFiles/uninstall.dir

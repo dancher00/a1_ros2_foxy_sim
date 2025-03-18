@@ -1,0 +1,1021 @@
+[0.000000] (-) TimerEvent: {}
+[0.001150] (-) JobUnselected: {'identifier': 'a1_description'}
+[0.001383] (-) JobUnselected: {'identifier': 'aliengo_description'}
+[0.001465] (-) JobUnselected: {'identifier': 'b2_description'}
+[0.001530] (-) JobUnselected: {'identifier': 'go1_description'}
+[0.001755] (-) JobUnselected: {'identifier': 'go2_description'}
+[0.001861] (-) JobUnselected: {'identifier': 'gz_quadruped_hardware'}
+[0.001922] (-) JobUnselected: {'identifier': 'gz_quadruped_playground'}
+[0.001981] (-) JobUnselected: {'identifier': 'hardware_unitree_mujoco'}
+[0.002108] (-) JobUnselected: {'identifier': 'joystick_input'}
+[0.002170] (-) JobUnselected: {'identifier': 'keyboard_input'}
+[0.002224] (-) JobUnselected: {'identifier': 'leg_pd_controller'}
+[0.002275] (-) JobUnselected: {'identifier': 'ocs2_quadruped_controller'}
+[0.002328] (-) JobUnselected: {'identifier': 'qpoases_colcon'}
+[0.002512] (-) JobUnselected: {'identifier': 'rl_quadruped_controller'}
+[0.002713] (control_input_msgs) JobQueued: {'identifier': 'control_input_msgs', 'dependencies': OrderedDict()}
+[0.002785] (controller_common) JobQueued: {'identifier': 'controller_common', 'dependencies': OrderedDict([('control_input_msgs', '/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs')])}
+[0.002856] (unitree_guide_controller) JobQueued: {'identifier': 'unitree_guide_controller', 'dependencies': OrderedDict([('control_input_msgs', '/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs'), ('controller_common', '/home/danya/a1_ros2_foxy_sim/src/install/controller_common')])}
+[0.002926] (control_input_msgs) JobStarted: {'identifier': 'control_input_msgs'}
+[0.030789] (control_input_msgs) JobProgress: {'identifier': 'control_input_msgs', 'progress': 'cmake'}
+[0.032940] (control_input_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/danya/a1_ros2_foxy_sim/src/quadruped_ros2_control/commands/control_input_msgs', '-DCMAKE_INSTALL_PREFIX=/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs'], 'cwd': '/home/danya/a1_ros2_foxy_sim/src/build/control_input_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'danya'), ('LC_TIME', 'ru_RU.UTF-8'), ('SSH_AGENT_PID', '1117'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/danya'), ('OLDPWD', '/home/danya'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ru_RU.UTF-8'), ('MANAGERPID', '972'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=87a732de48097f894e4948fb67d95dfd'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'danya'), ('JOURNAL_STREAM', '8:39285'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'danya'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/danya/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/danya:@/tmp/.ICE-unix/1177,unix/danya:/tmp/.ICE-unix/1177'), ('INVOCATION_ID', '963dc6352c6d417cb7817520ea277f11'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ru_RU.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/4a4d8282_5d92_4f05_8daa_5e3869c86ffc'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ru_RU.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.117'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ru_RU.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ru_RU.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ru_RU.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/danya/a1_ros2_foxy_sim/src/build/control_input_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=87a732de48097f894e4948fb67d95dfd'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'ru_RU.UTF-8'), ('LC_PAPER', 'ru_RU.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.099443] (-) TimerEvent: {}
+[0.170927] (control_input_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[0.199623] (-) TimerEvent: {}
+[0.277521] (control_input_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[0.286851] (control_input_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[0.299753] (-) TimerEvent: {}
+[0.400266] (-) TimerEvent: {}
+[0.445037] (control_input_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[0.446273] (control_input_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.500447] (-) TimerEvent: {}
+[0.601028] (-) TimerEvent: {}
+[0.616373] (control_input_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.637979] (control_input_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.638584] (control_input_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.643227] (control_input_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[0.701221] (-) TimerEvent: {}
+[0.801740] (-) TimerEvent: {}
+[0.820181] (control_input_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[0.822743] (control_input_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.901910] (-) TimerEvent: {}
+[1.002391] (-) TimerEvent: {}
+[1.007964] (control_input_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.030771] (control_input_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.031565] (control_input_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.045381] (control_input_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)\n'}
+[1.049043] (control_input_msgs) StdoutLine: {'line': b'-- Found ament_cmake_core: 0.9.12 (/opt/ros/foxy/share/ament_cmake_core/cmake)\n'}
+[1.093157] (control_input_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[1.093625] (control_input_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.102568] (-) TimerEvent: {}
+[1.203054] (-) TimerEvent: {}
+[1.303551] (-) TimerEvent: {}
+[1.404059] (-) TimerEvent: {}
+[1.445241] (control_input_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.463304] (control_input_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[1.504246] (-) TimerEvent: {}
+[1.604757] (-) TimerEvent: {}
+[1.705224] (-) TimerEvent: {}
+[1.805440] (control_input_msgs) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[1.805814] (-) TimerEvent: {}
+[1.870244] (control_input_msgs) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[1.906307] (-) TimerEvent: {}
+[2.006852] (-) TimerEvent: {}
+[2.037609] (control_input_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.107249] (-) TimerEvent: {}
+[2.132424] (control_input_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") \n'}
+[2.207435] (-) TimerEvent: {}
+[2.307899] (-) TimerEvent: {}
+[2.355430] (control_input_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.9.2 (/opt/ros/foxy/share/ament_cmake_ros/cmake)\n'}
+[2.408076] (-) TimerEvent: {}
+[2.508618] (-) TimerEvent: {}
+[2.568911] (control_input_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.582200] (control_input_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.608787] (-) TimerEvent: {}
+[2.628367] (control_input_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") \n'}
+[2.633266] (control_input_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.8.1 (/opt/ros/foxy/share/python_cmake_module/cmake)\n'}
+[2.689893] (control_input_msgs) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.8.so (found suitable version "3.8.10", minimum required is "3.5") \n'}
+[2.690288] (control_input_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[2.690505] (control_input_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8\n'}
+[2.690709] (control_input_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.8.so\n'}
+[2.708918] (-) TimerEvent: {}
+[2.731842] (control_input_msgs) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[2.809079] (-) TimerEvent: {}
+[2.909525] (-) TimerEvent: {}
+[3.006674] (control_input_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[3.009647] (-) TimerEvent: {}
+[3.062801] (control_input_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[3.081488] (control_input_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/danya/a1_ros2_foxy_sim/src/build/control_input_msgs\n'}
+[3.094050] (control_input_msgs) CommandEnded: {'returncode': 0}
+[3.102852] (control_input_msgs) JobProgress: {'identifier': 'control_input_msgs', 'progress': 'build'}
+[3.103147] (control_input_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/danya/a1_ros2_foxy_sim/src/build/control_input_msgs', '--', '-j8', '-l8'], 'cwd': '/home/danya/a1_ros2_foxy_sim/src/build/control_input_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'danya'), ('LC_TIME', 'ru_RU.UTF-8'), ('SSH_AGENT_PID', '1117'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/danya'), ('OLDPWD', '/home/danya'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ru_RU.UTF-8'), ('MANAGERPID', '972'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=87a732de48097f894e4948fb67d95dfd'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'danya'), ('JOURNAL_STREAM', '8:39285'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'danya'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/danya/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/danya:@/tmp/.ICE-unix/1177,unix/danya:/tmp/.ICE-unix/1177'), ('INVOCATION_ID', '963dc6352c6d417cb7817520ea277f11'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ru_RU.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/4a4d8282_5d92_4f05_8daa_5e3869c86ffc'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ru_RU.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.117'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ru_RU.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ru_RU.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ru_RU.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/danya/a1_ros2_foxy_sim/src/build/control_input_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=87a732de48097f894e4948fb67d95dfd'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'ru_RU.UTF-8'), ('LC_PAPER', 'ru_RU.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[3.109745] (-) TimerEvent: {}
+[3.194518] (control_input_msgs) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[3.194947] (control_input_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target control_input_msgs__cpp\x1b[0m\n'}
+[3.209881] (-) TimerEvent: {}
+[3.222262] (control_input_msgs) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[3.310028] (-) TimerEvent: {}
+[3.410493] (-) TimerEvent: {}
+[3.511207] (-) TimerEvent: {}
+[3.611660] (-) TimerEvent: {}
+[3.620648] (control_input_msgs) StdoutLine: {'line': b'[  6%] Built target control_input_msgs__cpp\n'}
+[3.626279] (control_input_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target control_input_msgs__rosidl_generator_c\x1b[0m\n'}
+[3.643003] (control_input_msgs) StdoutLine: {'line': b'[ 12%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[3.643361] (control_input_msgs) StdoutLine: {'line': b'[ 12%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[3.643539] (control_input_msgs) StdoutLine: {'line': b'[ 16%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[3.653796] (control_input_msgs) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding C object CMakeFiles/control_input_msgs__rosidl_generator_c.dir/rosidl_generator_c/control_input_msgs/msg/detail/inputs__functions.c.o\x1b[0m\n'}
+[3.711803] (-) TimerEvent: {}
+[3.761688] (control_input_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32m\x1b[1mLinking C shared library libcontrol_input_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[3.811938] (-) TimerEvent: {}
+[3.833662] (control_input_msgs) StdoutLine: {'line': b'[ 22%] Built target control_input_msgs__rosidl_generator_c\n'}
+[3.857772] (control_input_msgs) StdoutLine: {'line': b'[ 29%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[3.858127] (control_input_msgs) StdoutLine: {'line': b'[ 29%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[3.912070] (-) TimerEvent: {}
+[4.010979] (control_input_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target control_input_msgs__rosidl_typesupport_cpp\x1b[0m\n'}
+[4.012168] (-) TimerEvent: {}
+[4.039983] (control_input_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target control_input_msgs__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[4.042451] (control_input_msgs) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object CMakeFiles/control_input_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/control_input_msgs/msg/inputs__type_support.cpp.o\x1b[0m\n'}
+[4.066117] (control_input_msgs) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/control_input_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/control_input_msgs/msg/detail/inputs__type_support.cpp.o\x1b[0m\n'}
+[4.112308] (-) TimerEvent: {}
+[4.144412] (control_input_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target control_input_msgs__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[4.182719] (control_input_msgs) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/control_input_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/control_input_msgs/msg/detail/dds_fastrtps/inputs__type_support.cpp.o\x1b[0m\n'}
+[4.212539] (-) TimerEvent: {}
+[4.234783] (control_input_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target control_input_msgs__rosidl_typesupport_c\x1b[0m\n'}
+[4.259563] (control_input_msgs) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/control_input_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/control_input_msgs/msg/inputs__type_support.cpp.o\x1b[0m\n'}
+[4.312665] (-) TimerEvent: {}
+[4.335882] (control_input_msgs) StdoutLine: {'line': b'[ 45%] \x1b[32m\x1b[1mLinking CXX shared library libcontrol_input_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[4.412815] (-) TimerEvent: {}
+[4.424848] (control_input_msgs) StdoutLine: {'line': b'[ 45%] Built target control_input_msgs__rosidl_typesupport_c\n'}
+[4.439379] (control_input_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target control_input_msgs__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[4.464900] (control_input_msgs) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding C object CMakeFiles/control_input_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/control_input_msgs/msg/detail/inputs__type_support.c.o\x1b[0m\n'}
+[4.512962] (-) TimerEvent: {}
+[4.533002] (control_input_msgs) StdoutLine: {'line': b'[ 51%] \x1b[32m\x1b[1mLinking C shared library libcontrol_input_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[4.598906] (control_input_msgs) StdoutLine: {'line': b'[ 51%] Built target control_input_msgs__rosidl_typesupport_introspection_c\n'}
+[4.613113] (-) TimerEvent: {}
+[4.615029] (control_input_msgs) StdoutLine: {'line': b'[ 54%] \x1b[32m\x1b[1mLinking CXX shared library libcontrol_input_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[4.698412] (control_input_msgs) StdoutLine: {'line': b'[ 58%] \x1b[32m\x1b[1mLinking CXX shared library libcontrol_input_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[4.698887] (control_input_msgs) StdoutLine: {'line': b'[ 58%] Built target control_input_msgs__rosidl_typesupport_cpp\n'}
+[4.713258] (-) TimerEvent: {}
+[4.783535] (control_input_msgs) StdoutLine: {'line': b'[ 58%] Built target control_input_msgs__rosidl_typesupport_introspection_cpp\n'}
+[4.813430] (-) TimerEvent: {}
+[4.913961] (-) TimerEvent: {}
+[4.974641] (control_input_msgs) StdoutLine: {'line': b'[ 61%] \x1b[32m\x1b[1mLinking CXX shared library libcontrol_input_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[5.014161] (-) TimerEvent: {}
+[5.114780] (-) TimerEvent: {}
+[5.164258] (control_input_msgs) StdoutLine: {'line': b'[ 61%] Built target control_input_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[5.190777] (control_input_msgs) StdoutLine: {'line': b'[ 64%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[5.214945] (-) TimerEvent: {}
+[5.315621] (-) TimerEvent: {}
+[5.416114] (-) TimerEvent: {}
+[5.516726] (-) TimerEvent: {}
+[5.569630] (control_input_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target control_input_msgs__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[5.604023] (control_input_msgs) StdoutLine: {'line': b'[ 67%] \x1b[32mBuilding CXX object CMakeFiles/control_input_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/control_input_msgs/msg/detail/inputs__type_support_c.cpp.o\x1b[0m\n'}
+[5.616886] (-) TimerEvent: {}
+[5.717406] (-) TimerEvent: {}
+[5.817929] (-) TimerEvent: {}
+[5.918448] (-) TimerEvent: {}
+[6.019210] (-) TimerEvent: {}
+[6.120039] (-) TimerEvent: {}
+[6.210880] (control_input_msgs) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX shared library libcontrol_input_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[6.220230] (-) TimerEvent: {}
+[6.320783] (-) TimerEvent: {}
+[6.398495] (control_input_msgs) StdoutLine: {'line': b'[ 70%] Built target control_input_msgs__rosidl_typesupport_fastrtps_c\n'}
+[6.420916] (-) TimerEvent: {}
+[6.423642] (control_input_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target control_input_msgs\x1b[0m\n'}
+[6.451148] (control_input_msgs) StdoutLine: {'line': b'[ 70%] Built target control_input_msgs\n'}
+[6.476937] (control_input_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target control_input_msgs__py\x1b[0m\n'}
+[6.505101] (control_input_msgs) StdoutLine: {'line': b'[ 74%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[6.521030] (-) TimerEvent: {}
+[6.621435] (-) TimerEvent: {}
+[6.721823] (-) TimerEvent: {}
+[6.822223] (-) TimerEvent: {}
+[6.922624] (-) TimerEvent: {}
+[7.023025] (-) TimerEvent: {}
+[7.123449] (-) TimerEvent: {}
+[7.131604] (control_input_msgs) StdoutLine: {'line': b'[ 74%] Built target control_input_msgs__py\n'}
+[7.158274] (control_input_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target control_input_msgs__python\x1b[0m\n'}
+[7.217586] (control_input_msgs) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding C object CMakeFiles/control_input_msgs__python.dir/rosidl_generator_py/control_input_msgs/msg/_inputs_s.c.o\x1b[0m\n'}
+[7.223601] (-) TimerEvent: {}
+[7.324342] (-) TimerEvent: {}
+[7.402142] (control_input_msgs) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/control_input_msgs/libcontrol_input_msgs__python.so\x1b[0m\n'}
+[7.424761] (-) TimerEvent: {}
+[7.495480] (control_input_msgs) StdoutLine: {'line': b'[ 80%] Built target control_input_msgs__python\n'}
+[7.518783] (control_input_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target control_input_msgs__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[7.519180] (control_input_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target control_input_msgs__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[7.519518] (control_input_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target control_input_msgs__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[7.524866] (-) TimerEvent: {}
+[7.555787] (control_input_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/control_input_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/control_input_msgs/_control_input_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[7.556193] (control_input_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/control_input_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/control_input_msgs/_control_input_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[7.558424] (control_input_msgs) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/control_input_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/control_input_msgs/_control_input_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[7.625027] (-) TimerEvent: {}
+[7.702687] (control_input_msgs) StdoutLine: {'line': b'[ 93%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/control_input_msgs/control_input_msgs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so\x1b[0m\n'}
+[7.713240] (control_input_msgs) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking CXX shared library rosidl_generator_py/control_input_msgs/control_input_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so\x1b[0m\n'}
+[7.719699] (control_input_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/control_input_msgs/control_input_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so\x1b[0m\n'}
+[7.725171] (-) TimerEvent: {}
+[7.774460] (control_input_msgs) StdoutLine: {'line': b'[100%] Built target control_input_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[7.791021] (control_input_msgs) StdoutLine: {'line': b'[100%] Built target control_input_msgs__rosidl_typesupport_c__pyext\n'}
+[7.825316] (-) TimerEvent: {}
+[7.846557] (control_input_msgs) StdoutLine: {'line': b'[100%] Built target control_input_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[7.880581] (control_input_msgs) CommandEnded: {'returncode': 0}
+[7.882062] (control_input_msgs) JobProgress: {'identifier': 'control_input_msgs', 'progress': 'install'}
+[7.908873] (control_input_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/danya/a1_ros2_foxy_sim/src/build/control_input_msgs'], 'cwd': '/home/danya/a1_ros2_foxy_sim/src/build/control_input_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'danya'), ('LC_TIME', 'ru_RU.UTF-8'), ('SSH_AGENT_PID', '1117'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/danya'), ('OLDPWD', '/home/danya'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ru_RU.UTF-8'), ('MANAGERPID', '972'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=87a732de48097f894e4948fb67d95dfd'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'danya'), ('JOURNAL_STREAM', '8:39285'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'danya'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/danya/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/danya:@/tmp/.ICE-unix/1177,unix/danya:/tmp/.ICE-unix/1177'), ('INVOCATION_ID', '963dc6352c6d417cb7817520ea277f11'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ru_RU.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/4a4d8282_5d92_4f05_8daa_5e3869c86ffc'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ru_RU.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.117'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ru_RU.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ru_RU.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ru_RU.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/danya/a1_ros2_foxy_sim/src/build/control_input_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=87a732de48097f894e4948fb67d95dfd'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'ru_RU.UTF-8'), ('LC_PAPER', 'ru_RU.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[7.925505] (-) TimerEvent: {}
+[7.932955] (control_input_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[7.933504] (control_input_msgs) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/share/ament_index/resource_index/rosidl_interfaces/control_input_msgs\n'}
+[7.933891] (control_input_msgs) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/include/control_input_msgs\n'}
+[7.934292] (control_input_msgs) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/include/control_input_msgs/msg\n'}
+[7.934587] (control_input_msgs) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/include/control_input_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[7.934852] (control_input_msgs) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/include/control_input_msgs/msg/inputs.h\n'}
+[7.935154] (control_input_msgs) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/include/control_input_msgs/msg/detail\n'}
+[7.935402] (control_input_msgs) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/include/control_input_msgs/msg/detail/inputs__functions.h\n'}
+[7.935615] (control_input_msgs) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/include/control_input_msgs/msg/detail/inputs__type_support.h\n'}
+[7.935859] (control_input_msgs) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/include/control_input_msgs/msg/detail/inputs__functions.c\n'}
+[7.936126] (control_input_msgs) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/include/control_input_msgs/msg/detail/inputs__struct.h\n'}
+[7.936500] (control_input_msgs) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/share/control_input_msgs/environment/library_path.sh\n'}
+[7.936793] (control_input_msgs) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/share/control_input_msgs/environment/library_path.dsv\n'}
+[7.937065] (control_input_msgs) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/lib/libcontrol_input_msgs__rosidl_generator_c.so\n'}
+[7.937409] (control_input_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/lib/libcontrol_input_msgs__rosidl_generator_c.so" to ""\n'}
+[7.937656] (control_input_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/include/control_input_msgs\n'}
+[7.937900] (control_input_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/include/control_input_msgs/msg\n'}
+[7.938148] (control_input_msgs) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/include/control_input_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[7.938349] (control_input_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/include/control_input_msgs/msg/detail\n'}
+[7.938583] (control_input_msgs) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/include/control_input_msgs/msg/detail/inputs__rosidl_typesupport_fastrtps_c.h\n'}
+[7.938850] (control_input_msgs) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/lib/libcontrol_input_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[7.939115] (control_input_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/lib/libcontrol_input_msgs__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[7.939416] (control_input_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/include/control_input_msgs\n'}
+[7.939645] (control_input_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/include/control_input_msgs/msg\n'}
+[7.939888] (control_input_msgs) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/include/control_input_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[7.940091] (control_input_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/include/control_input_msgs/msg/detail\n'}
+[7.940291] (control_input_msgs) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/include/control_input_msgs/msg/detail/dds_fastrtps\n'}
+[7.940588] (control_input_msgs) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/include/control_input_msgs/msg/detail/inputs__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[7.940895] (control_input_msgs) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/lib/libcontrol_input_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[7.941366] (control_input_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/lib/libcontrol_input_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[7.941689] (control_input_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/include/control_input_msgs\n'}
+[7.941932] (control_input_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/include/control_input_msgs/msg\n'}
+[7.942202] (control_input_msgs) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/include/control_input_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[7.942444] (control_input_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/include/control_input_msgs/msg/detail\n'}
+[7.942647] (control_input_msgs) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/include/control_input_msgs/msg/detail/inputs__type_support.c\n'}
+[7.942843] (control_input_msgs) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/include/control_input_msgs/msg/detail/inputs__rosidl_typesupport_introspection_c.h\n'}
+[7.943107] (control_input_msgs) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/lib/libcontrol_input_msgs__rosidl_typesupport_introspection_c.so\n'}
+[7.943307] (control_input_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/lib/libcontrol_input_msgs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[7.943504] (control_input_msgs) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/lib/libcontrol_input_msgs__rosidl_typesupport_c.so\n'}
+[7.943761] (control_input_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/lib/libcontrol_input_msgs__rosidl_typesupport_c.so" to ""\n'}
+[7.944053] (control_input_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/include/control_input_msgs\n'}
+[7.944267] (control_input_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/include/control_input_msgs/msg\n'}
+[7.944517] (control_input_msgs) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/include/control_input_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[7.944725] (control_input_msgs) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/include/control_input_msgs/msg/inputs.hpp\n'}
+[7.944901] (control_input_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/include/control_input_msgs/msg/detail\n'}
+[7.945218] (control_input_msgs) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/include/control_input_msgs/msg/detail/inputs__struct.hpp\n'}
+[7.945417] (control_input_msgs) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/include/control_input_msgs/msg/detail/inputs__traits.hpp\n'}
+[7.945614] (control_input_msgs) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/include/control_input_msgs/msg/detail/inputs__builder.hpp\n'}
+[7.945810] (control_input_msgs) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/include/control_input_msgs/msg/detail/inputs__type_support.hpp\n'}
+[7.946007] (control_input_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/include/control_input_msgs\n'}
+[7.946204] (control_input_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/include/control_input_msgs/msg\n'}
+[7.946400] (control_input_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/include/control_input_msgs/msg/detail\n'}
+[7.946594] (control_input_msgs) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/include/control_input_msgs/msg/detail/inputs__rosidl_typesupport_introspection_cpp.hpp\n'}
+[7.946893] (control_input_msgs) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/include/control_input_msgs/msg/detail/inputs__type_support.cpp\n'}
+[7.947062] (control_input_msgs) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/lib/libcontrol_input_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[7.947280] (control_input_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/lib/libcontrol_input_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[7.947498] (control_input_msgs) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/lib/libcontrol_input_msgs__rosidl_typesupport_cpp.so\n'}
+[7.947725] (control_input_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/lib/libcontrol_input_msgs__rosidl_typesupport_cpp.so" to ""\n'}
+[7.947892] (control_input_msgs) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/share/control_input_msgs/environment/pythonpath.sh\n'}
+[7.948079] (control_input_msgs) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/share/control_input_msgs/environment/pythonpath.dsv\n'}
+[7.948333] (control_input_msgs) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/lib/python3.8/site-packages/control_input_msgs/__init__.py\n'}
+[8.017243] (control_input_msgs) StdoutLine: {'line': b"Compiling '/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/lib/python3.8/site-packages/control_input_msgs/__init__.py'...\n"}
+[8.024340] (control_input_msgs) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/lib/python3.8/site-packages/control_input_msgs/msg\n'}
+[8.024903] (control_input_msgs) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/lib/python3.8/site-packages/control_input_msgs/msg/__init__.py\n'}
+[8.025256] (control_input_msgs) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/lib/python3.8/site-packages/control_input_msgs/msg/_inputs_s.c\n'}
+[8.025742] (-) TimerEvent: {}
+[8.025972] (control_input_msgs) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/lib/python3.8/site-packages/control_input_msgs/msg/_inputs.py\n'}
+[8.026439] (control_input_msgs) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/lib/python3.8/site-packages/control_input_msgs/control_input_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so\n'}
+[8.028267] (control_input_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/lib/python3.8/site-packages/control_input_msgs/control_input_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so" to ""\n'}
+[8.029168] (control_input_msgs) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/lib/python3.8/site-packages/control_input_msgs/control_input_msgs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so\n'}
+[8.030687] (control_input_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/lib/python3.8/site-packages/control_input_msgs/control_input_msgs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so" to ""\n'}
+[8.031223] (control_input_msgs) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/lib/python3.8/site-packages/control_input_msgs/control_input_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so\n'}
+[8.032497] (control_input_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/lib/python3.8/site-packages/control_input_msgs/control_input_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so" to ""\n'}
+[8.032952] (control_input_msgs) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/lib/libcontrol_input_msgs__python.so\n'}
+[8.033794] (control_input_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/lib/libcontrol_input_msgs__python.so" to ""\n'}
+[8.034263] (control_input_msgs) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/share/control_input_msgs/msg/Inputs.idl\n'}
+[8.034716] (control_input_msgs) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/share/control_input_msgs/msg/Inputs.msg\n'}
+[8.035157] (control_input_msgs) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/share/ament_index/resource_index/package_run_dependencies/control_input_msgs\n'}
+[8.035559] (control_input_msgs) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/share/ament_index/resource_index/parent_prefix_path/control_input_msgs\n'}
+[8.035922] (control_input_msgs) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/share/control_input_msgs/environment/ament_prefix_path.sh\n'}
+[8.036361] (control_input_msgs) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/share/control_input_msgs/environment/ament_prefix_path.dsv\n'}
+[8.037075] (control_input_msgs) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/share/control_input_msgs/environment/path.sh\n'}
+[8.037484] (control_input_msgs) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/share/control_input_msgs/environment/path.dsv\n'}
+[8.037820] (control_input_msgs) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/share/control_input_msgs/local_setup.bash\n'}
+[8.038203] (control_input_msgs) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/share/control_input_msgs/local_setup.sh\n'}
+[8.038588] (control_input_msgs) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/share/control_input_msgs/local_setup.zsh\n'}
+[8.039015] (control_input_msgs) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/share/control_input_msgs/local_setup.dsv\n'}
+[8.039395] (control_input_msgs) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/share/control_input_msgs/package.dsv\n'}
+[8.039825] (control_input_msgs) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/share/ament_index/resource_index/packages/control_input_msgs\n'}
+[8.040445] (control_input_msgs) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/share/control_input_msgs/cmake/control_input_msgs__rosidl_generator_cExport.cmake\n'}
+[8.041009] (control_input_msgs) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/share/control_input_msgs/cmake/control_input_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[8.041576] (control_input_msgs) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/share/control_input_msgs/cmake/control_input_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[8.041948] (control_input_msgs) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/share/control_input_msgs/cmake/control_input_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[8.042327] (control_input_msgs) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/share/control_input_msgs/cmake/control_input_msgs__rosidl_typesupport_cExport.cmake\n'}
+[8.042700] (control_input_msgs) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/share/control_input_msgs/cmake/control_input_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[8.043019] (control_input_msgs) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/share/control_input_msgs/cmake/control_input_msgs__rosidl_generator_cppExport.cmake\n'}
+[8.043326] (control_input_msgs) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/share/control_input_msgs/cmake/control_input_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[8.043626] (control_input_msgs) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/share/control_input_msgs/cmake/control_input_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[8.043999] (control_input_msgs) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/share/control_input_msgs/cmake/control_input_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[8.044304] (control_input_msgs) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/share/control_input_msgs/cmake/control_input_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[8.044636] (control_input_msgs) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/share/control_input_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[8.044927] (control_input_msgs) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/share/control_input_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[8.045212] (control_input_msgs) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/share/control_input_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[8.045509] (control_input_msgs) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/share/control_input_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[8.045743] (control_input_msgs) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/share/control_input_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[8.046018] (control_input_msgs) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/share/control_input_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[8.046298] (control_input_msgs) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/share/control_input_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[8.046650] (control_input_msgs) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/share/control_input_msgs/cmake/control_input_msgsConfig.cmake\n'}
+[8.046880] (control_input_msgs) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/share/control_input_msgs/cmake/control_input_msgsConfig-version.cmake\n'}
+[8.047158] (control_input_msgs) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/share/control_input_msgs/package.xml\n'}
+[8.052451] (control_input_msgs) CommandEnded: {'returncode': 0}
+[8.120492] (control_input_msgs) JobEnded: {'identifier': 'control_input_msgs', 'rc': 0}
+[8.121840] (controller_common) JobStarted: {'identifier': 'controller_common'}
+[8.127688] (-) TimerEvent: {}
+[8.142975] (controller_common) JobProgress: {'identifier': 'controller_common', 'progress': 'cmake'}
+[8.145146] (controller_common) Command: {'cmd': ['/usr/bin/cmake', '/home/danya/a1_ros2_foxy_sim/src/quadruped_ros2_control/libraries/controller_common', '-DCMAKE_INSTALL_PREFIX=/home/danya/a1_ros2_foxy_sim/src/install/controller_common'], 'cwd': '/home/danya/a1_ros2_foxy_sim/src/build/controller_common', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'danya'), ('LC_TIME', 'ru_RU.UTF-8'), ('SSH_AGENT_PID', '1117'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/danya'), ('OLDPWD', '/home/danya'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ru_RU.UTF-8'), ('MANAGERPID', '972'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=87a732de48097f894e4948fb67d95dfd'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'danya'), ('JOURNAL_STREAM', '8:39285'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'danya'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/danya/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/danya:@/tmp/.ICE-unix/1177,unix/danya:/tmp/.ICE-unix/1177'), ('INVOCATION_ID', '963dc6352c6d417cb7817520ea277f11'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ru_RU.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/4a4d8282_5d92_4f05_8daa_5e3869c86ffc'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ru_RU.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.117'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ru_RU.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ru_RU.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ru_RU.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/danya/a1_ros2_foxy_sim/src/build/controller_common'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=87a732de48097f894e4948fb67d95dfd'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'ru_RU.UTF-8'), ('LC_PAPER', 'ru_RU.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs:/opt/ros/foxy')]), 'shell': False}
+[8.227682] (-) TimerEvent: {}
+[8.281283] (controller_common) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[8.327840] (-) TimerEvent: {}
+[8.396934] (controller_common) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[8.406605] (controller_common) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[8.428031] (-) TimerEvent: {}
+[8.528727] (-) TimerEvent: {}
+[8.564571] (controller_common) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[8.566270] (controller_common) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[8.628861] (-) TimerEvent: {}
+[8.718825] (controller_common) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[8.728961] (-) TimerEvent: {}
+[8.738341] (controller_common) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[8.738849] (controller_common) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[8.743019] (controller_common) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[8.829147] (-) TimerEvent: {}
+[8.916800] (controller_common) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[8.919638] (controller_common) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[8.929267] (-) TimerEvent: {}
+[9.029731] (-) TimerEvent: {}
+[9.105640] (controller_common) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[9.126762] (controller_common) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[9.127469] (controller_common) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[9.129871] (-) TimerEvent: {}
+[9.132351] (controller_common) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[9.181352] (controller_common) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[9.181812] (controller_common) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[9.230041] (-) TimerEvent: {}
+[9.330538] (-) TimerEvent: {}
+[9.431009] (-) TimerEvent: {}
+[9.531493] (-) TimerEvent: {}
+[9.584200] (controller_common) StdoutLine: {'line': b'-- Found hardware_interface: 0.11.0 (/opt/ros/foxy/share/hardware_interface/cmake)\n'}
+[9.631662] (-) TimerEvent: {}
+[9.653308] (controller_common) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[9.666014] (controller_common) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[9.732106] (-) TimerEvent: {}
+[9.832744] (-) TimerEvent: {}
+[9.885756] (controller_common) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[9.932917] (-) TimerEvent: {}
+[9.947147] (controller_common) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[10.033061] (-) TimerEvent: {}
+[10.105597] (controller_common) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[10.133199] (-) TimerEvent: {}
+[10.233663] (-) TimerEvent: {}
+[10.334175] (-) TimerEvent: {}
+[10.434695] (-) TimerEvent: {}
+[10.535211] (-) TimerEvent: {}
+[10.635719] (-) TimerEvent: {}
+[10.736235] (-) TimerEvent: {}
+[10.836766] (-) TimerEvent: {}
+[10.937284] (-) TimerEvent: {}
+[11.020633] (controller_common) StdoutLine: {'line': b'-- Found control_input_msgs: 0.0.0 (/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/share/control_input_msgs/cmake)\n'}
+[11.036562] (controller_common) StdoutLine: {'line': b'-- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)\n'}
+[11.037363] (-) TimerEvent: {}
+[11.125853] (controller_common) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[11.131254] (controller_common) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[11.134757] (controller_common) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[11.137478] (-) TimerEvent: {}
+[11.237987] (-) TimerEvent: {}
+[11.296592] (controller_common) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[11.297281] (controller_common) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[11.338148] (-) TimerEvent: {}
+[11.438627] (-) TimerEvent: {}
+[11.479937] (controller_common) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[11.480477] (controller_common) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[11.538799] (-) TimerEvent: {}
+[11.636079] (controller_common) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[11.636596] (controller_common) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[11.638926] (-) TimerEvent: {}
+[11.739367] (-) TimerEvent: {}
+[11.803788] (controller_common) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[11.806603] (controller_common) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[11.839536] (-) TimerEvent: {}
+[11.940044] (-) TimerEvent: {}
+[12.040884] (-) TimerEvent: {}
+[12.141385] (-) TimerEvent: {}
+[12.211484] (controller_common) StdoutLine: {'line': b'-- Configuring done\n'}
+[12.241590] (-) TimerEvent: {}
+[12.281796] (controller_common) StdoutLine: {'line': b'-- Generating done\n'}
+[12.295924] (controller_common) StdoutLine: {'line': b'-- Build files have been written to: /home/danya/a1_ros2_foxy_sim/src/build/controller_common\n'}
+[12.310517] (controller_common) CommandEnded: {'returncode': 0}
+[12.315950] (controller_common) JobProgress: {'identifier': 'controller_common', 'progress': 'build'}
+[12.316291] (controller_common) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/danya/a1_ros2_foxy_sim/src/build/controller_common', '--', '-j8', '-l8'], 'cwd': '/home/danya/a1_ros2_foxy_sim/src/build/controller_common', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'danya'), ('LC_TIME', 'ru_RU.UTF-8'), ('SSH_AGENT_PID', '1117'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/danya'), ('OLDPWD', '/home/danya'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ru_RU.UTF-8'), ('MANAGERPID', '972'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=87a732de48097f894e4948fb67d95dfd'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'danya'), ('JOURNAL_STREAM', '8:39285'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'danya'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/danya/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/danya:@/tmp/.ICE-unix/1177,unix/danya:/tmp/.ICE-unix/1177'), ('INVOCATION_ID', '963dc6352c6d417cb7817520ea277f11'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ru_RU.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/4a4d8282_5d92_4f05_8daa_5e3869c86ffc'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ru_RU.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.117'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ru_RU.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ru_RU.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ru_RU.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/danya/a1_ros2_foxy_sim/src/build/controller_common'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=87a732de48097f894e4948fb67d95dfd'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'ru_RU.UTF-8'), ('LC_PAPER', 'ru_RU.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs:/opt/ros/foxy')]), 'shell': False}
+[12.341747] (-) TimerEvent: {}
+[12.417668] (controller_common) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target controller_common\x1b[0m\n'}
+[12.441892] (-) TimerEvent: {}
+[12.484329] (controller_common) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/controller_common.dir/src/FSM/StatePassive.cpp.o\x1b[0m\n'}
+[12.486123] (controller_common) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/controller_common.dir/src/FSM/StateFixedDown.cpp.o\x1b[0m\n'}
+[12.486432] (controller_common) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/controller_common.dir/src/FSM/BaseFixedStand.cpp.o\x1b[0m\n'}
+[12.542062] (-) TimerEvent: {}
+[12.642620] (-) TimerEvent: {}
+[12.743209] (-) TimerEvent: {}
+[12.843773] (-) TimerEvent: {}
+[12.944333] (-) TimerEvent: {}
+[13.044864] (-) TimerEvent: {}
+[13.145432] (-) TimerEvent: {}
+[13.245952] (-) TimerEvent: {}
+[13.346522] (-) TimerEvent: {}
+[13.438551] (controller_common) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libcontroller_common.so\x1b[0m\n'}
+[13.446687] (-) TimerEvent: {}
+[13.547238] (-) TimerEvent: {}
+[13.647825] (-) TimerEvent: {}
+[13.727458] (controller_common) StdoutLine: {'line': b'[100%] Built target controller_common\n'}
+[13.748025] (-) TimerEvent: {}
+[13.758710] (controller_common) CommandEnded: {'returncode': 0}
+[13.760484] (controller_common) JobProgress: {'identifier': 'controller_common', 'progress': 'install'}
+[13.761758] (controller_common) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/danya/a1_ros2_foxy_sim/src/build/controller_common'], 'cwd': '/home/danya/a1_ros2_foxy_sim/src/build/controller_common', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'danya'), ('LC_TIME', 'ru_RU.UTF-8'), ('SSH_AGENT_PID', '1117'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/danya'), ('OLDPWD', '/home/danya'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ru_RU.UTF-8'), ('MANAGERPID', '972'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=87a732de48097f894e4948fb67d95dfd'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'danya'), ('JOURNAL_STREAM', '8:39285'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'danya'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/danya/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/danya:@/tmp/.ICE-unix/1177,unix/danya:/tmp/.ICE-unix/1177'), ('INVOCATION_ID', '963dc6352c6d417cb7817520ea277f11'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ru_RU.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/4a4d8282_5d92_4f05_8daa_5e3869c86ffc'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ru_RU.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.117'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ru_RU.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ru_RU.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ru_RU.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/danya/a1_ros2_foxy_sim/src/build/controller_common'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=87a732de48097f894e4948fb67d95dfd'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'ru_RU.UTF-8'), ('LC_PAPER', 'ru_RU.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs:/opt/ros/foxy')]), 'shell': False}
+[13.787105] (controller_common) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[13.787806] (controller_common) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/controller_common/include/controller_common\n'}
+[13.788141] (controller_common) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/controller_common/include/controller_common/controller_common\n'}
+[13.788434] (controller_common) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/controller_common/include/controller_common/controller_common/common\n'}
+[13.788706] (controller_common) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/controller_common/include/controller_common/controller_common/common/enumClass.h\n'}
+[13.788879] (controller_common) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/controller_common/include/controller_common/controller_common/common/mathTools.h\n'}
+[13.789095] (controller_common) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/controller_common/include/controller_common/controller_common/common/mathTypes.h\n'}
+[13.789246] (controller_common) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/controller_common/include/controller_common/controller_common/FSM\n'}
+[13.789434] (controller_common) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/controller_common/include/controller_common/controller_common/FSM/StateFixedDown.h\n'}
+[13.789611] (controller_common) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/controller_common/include/controller_common/controller_common/FSM/BaseFixedStand.h\n'}
+[13.789805] (controller_common) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/controller_common/include/controller_common/controller_common/FSM/FSMState.h\n'}
+[13.789979] (controller_common) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/controller_common/include/controller_common/controller_common/FSM/StatePassive.h\n'}
+[13.790401] (controller_common) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/controller_common/include/controller_common/controller_common/CtrlInterfaces.h\n'}
+[13.790786] (controller_common) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/controller_common/lib/libcontroller_common.so\n'}
+[13.791070] (controller_common) StdoutLine: {'line': b'-- Set runtime path of "/home/danya/a1_ros2_foxy_sim/src/install/controller_common/lib/libcontroller_common.so" to ""\n'}
+[13.791333] (controller_common) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/controller_common/share/controller_common/environment/library_path.sh\n'}
+[13.791578] (controller_common) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/controller_common/share/controller_common/environment/library_path.dsv\n'}
+[13.791842] (controller_common) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/controller_common/share/ament_index/resource_index/package_run_dependencies/controller_common\n'}
+[13.792112] (controller_common) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/controller_common/share/ament_index/resource_index/parent_prefix_path/controller_common\n'}
+[13.792369] (controller_common) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/controller_common/share/controller_common/environment/ament_prefix_path.sh\n'}
+[13.792668] (controller_common) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/controller_common/share/controller_common/environment/ament_prefix_path.dsv\n'}
+[13.792931] (controller_common) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/controller_common/share/controller_common/environment/path.sh\n'}
+[13.793190] (controller_common) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/controller_common/share/controller_common/environment/path.dsv\n'}
+[13.793444] (controller_common) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/controller_common/share/controller_common/local_setup.bash\n'}
+[13.793694] (controller_common) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/controller_common/share/controller_common/local_setup.sh\n'}
+[13.793943] (controller_common) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/controller_common/share/controller_common/local_setup.zsh\n'}
+[13.794163] (controller_common) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/controller_common/share/controller_common/local_setup.dsv\n'}
+[13.794417] (controller_common) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/controller_common/share/controller_common/package.dsv\n'}
+[13.794669] (controller_common) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/controller_common/share/ament_index/resource_index/packages/controller_common\n'}
+[13.794946] (controller_common) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/controller_common/share/controller_common/cmake/export_controller_commonExport.cmake\n'}
+[13.795259] (controller_common) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/controller_common/share/controller_common/cmake/export_controller_commonExport-release.cmake\n'}
+[13.795551] (controller_common) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/controller_common/share/controller_common/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[13.795830] (controller_common) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/controller_common/share/controller_common/cmake/controller_commonConfig.cmake\n'}
+[13.796089] (controller_common) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/controller_common/share/controller_common/cmake/controller_commonConfig-version.cmake\n'}
+[13.796361] (controller_common) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/controller_common/share/controller_common/package.xml\n'}
+[13.800805] (controller_common) CommandEnded: {'returncode': 0}
+[13.829648] (controller_common) JobEnded: {'identifier': 'controller_common', 'rc': 0}
+[13.831623] (unitree_guide_controller) JobStarted: {'identifier': 'unitree_guide_controller'}
+[13.848280] (-) TimerEvent: {}
+[13.857241] (unitree_guide_controller) JobProgress: {'identifier': 'unitree_guide_controller', 'progress': 'cmake'}
+[13.858745] (unitree_guide_controller) Command: {'cmd': ['/usr/bin/cmake', '/home/danya/a1_ros2_foxy_sim/src/quadruped_ros2_control/controllers/unitree_guide_controller', '-DCMAKE_INSTALL_PREFIX=/home/danya/a1_ros2_foxy_sim/src/install/unitree_guide_controller'], 'cwd': '/home/danya/a1_ros2_foxy_sim/src/build/unitree_guide_controller', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'danya'), ('LC_TIME', 'ru_RU.UTF-8'), ('SSH_AGENT_PID', '1117'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/danya/a1_ros2_foxy_sim/src/install/controller_common/lib:/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/danya'), ('OLDPWD', '/home/danya'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ru_RU.UTF-8'), ('MANAGERPID', '972'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=87a732de48097f894e4948fb67d95dfd'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'danya'), ('JOURNAL_STREAM', '8:39285'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'danya'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/danya/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/danya:@/tmp/.ICE-unix/1177,unix/danya:/tmp/.ICE-unix/1177'), ('INVOCATION_ID', '963dc6352c6d417cb7817520ea277f11'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ru_RU.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/4a4d8282_5d92_4f05_8daa_5e3869c86ffc'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ru_RU.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.117'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/danya/a1_ros2_foxy_sim/src/install/controller_common:/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ru_RU.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ru_RU.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ru_RU.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/danya/a1_ros2_foxy_sim/src/build/unitree_guide_controller'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=87a732de48097f894e4948fb67d95dfd'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'ru_RU.UTF-8'), ('LC_PAPER', 'ru_RU.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/danya/a1_ros2_foxy_sim/src/install/controller_common:/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs:/opt/ros/foxy')]), 'shell': False}
+[13.948392] (-) TimerEvent: {}
+[13.994739] (unitree_guide_controller) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[14.048852] (-) TimerEvent: {}
+[14.107356] (unitree_guide_controller) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[14.116208] (unitree_guide_controller) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[14.148993] (-) TimerEvent: {}
+[14.249479] (-) TimerEvent: {}
+[14.277534] (unitree_guide_controller) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[14.280274] (unitree_guide_controller) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[14.349656] (-) TimerEvent: {}
+[14.446888] (unitree_guide_controller) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[14.449722] (-) TimerEvent: {}
+[14.470188] (unitree_guide_controller) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[14.470718] (unitree_guide_controller) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[14.474788] (unitree_guide_controller) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[14.549952] (-) TimerEvent: {}
+[14.650507] (-) TimerEvent: {}
+[14.656180] (unitree_guide_controller) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[14.659218] (unitree_guide_controller) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[14.750656] (-) TimerEvent: {}
+[14.842183] (unitree_guide_controller) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[14.850799] (-) TimerEvent: {}
+[14.865713] (unitree_guide_controller) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[14.866505] (unitree_guide_controller) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[14.871419] (unitree_guide_controller) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[14.919205] (unitree_guide_controller) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[14.919595] (unitree_guide_controller) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[14.950997] (-) TimerEvent: {}
+[15.051477] (-) TimerEvent: {}
+[15.151966] (-) TimerEvent: {}
+[15.252515] (-) TimerEvent: {}
+[15.308890] (unitree_guide_controller) StdoutLine: {'line': b'-- Found pluginlib: 2.5.4 (/opt/ros/foxy/share/pluginlib/cmake)\n'}
+[15.352792] (-) TimerEvent: {}
+[15.407750] (unitree_guide_controller) StdoutLine: {'line': b'-- Found controller_interface: 0.11.0 (/opt/ros/foxy/share/controller_interface/cmake)\n'}
+[15.452982] (-) TimerEvent: {}
+[15.457055] (unitree_guide_controller) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[15.470072] (unitree_guide_controller) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[15.553138] (-) TimerEvent: {}
+[15.653541] (-) TimerEvent: {}
+[15.708023] (unitree_guide_controller) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[15.753714] (-) TimerEvent: {}
+[15.772971] (unitree_guide_controller) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[15.853885] (-) TimerEvent: {}
+[15.926741] (unitree_guide_controller) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[15.954065] (-) TimerEvent: {}
+[16.054568] (-) TimerEvent: {}
+[16.155088] (-) TimerEvent: {}
+[16.255593] (-) TimerEvent: {}
+[16.356115] (-) TimerEvent: {}
+[16.456649] (-) TimerEvent: {}
+[16.557179] (-) TimerEvent: {}
+[16.657713] (-) TimerEvent: {}
+[16.758243] (-) TimerEvent: {}
+[16.858753] (-) TimerEvent: {}
+[16.959276] (-) TimerEvent: {}
+[16.978787] (unitree_guide_controller) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[16.981493] (unitree_guide_controller) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[16.983020] (unitree_guide_controller) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[17.059454] (-) TimerEvent: {}
+[17.158042] (unitree_guide_controller) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[17.158574] (unitree_guide_controller) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[17.159518] (-) TimerEvent: {}
+[17.259880] (-) TimerEvent: {}
+[17.334662] (unitree_guide_controller) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[17.335132] (unitree_guide_controller) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[17.360039] (-) TimerEvent: {}
+[17.460536] (-) TimerEvent: {}
+[17.490508] (unitree_guide_controller) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[17.490978] (unitree_guide_controller) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[17.560932] (-) TimerEvent: {}
+[17.661460] (-) TimerEvent: {}
+[17.668593] (unitree_guide_controller) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[17.671783] (unitree_guide_controller) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[17.761649] (-) TimerEvent: {}
+[17.862168] (-) TimerEvent: {}
+[17.962935] (-) TimerEvent: {}
+[18.063436] (-) TimerEvent: {}
+[18.157692] (unitree_guide_controller) StdoutLine: {'line': b'-- Found realtime_tools: 2.2.0 (/opt/ros/foxy/share/realtime_tools/cmake)\n'}
+[18.163565] (-) TimerEvent: {}
+[18.230363] (unitree_guide_controller) StdoutLine: {'line': b'-- Found control_input_msgs: 0.0.0 (/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/share/control_input_msgs/cmake)\n'}
+[18.242604] (unitree_guide_controller) StdoutLine: {'line': b'-- Found controller_common: 0.0.0 (/home/danya/a1_ros2_foxy_sim/src/install/controller_common/share/controller_common/cmake)\n'}
+[18.247691] (unitree_guide_controller) StdoutLine: {'line': b'-- Found kdl_parser: 2.4.1 (/opt/ros/foxy/share/kdl_parser/cmake)\n'}
+[18.254770] (unitree_guide_controller) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/foxy/share/eigen3_cmake_module/cmake)\n'}
+[18.262401] (unitree_guide_controller) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[18.263667] (-) TimerEvent: {}
+[18.275179] (unitree_guide_controller) StdoutLine: {'line': b'-- Found urdf: 2.4.0 (/opt/ros/foxy/share/urdf/cmake)\n'}
+[18.363850] (-) TimerEvent: {}
+[18.375298] (unitree_guide_controller) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[18.464023] (-) TimerEvent: {}
+[18.519762] (unitree_guide_controller) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[18.520207] (unitree_guide_controller) StdoutLine: {'line': b'-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/danya/a1_ros2_foxy_sim/src/quadruped_ros2_control/controllers/unitree_guide_controller/include>;/home/danya/a1_ros2_foxy_sim/src/quadruped_ros2_control/controllers/unitree_guide_controller/src\n'}
+[18.520533] (unitree_guide_controller) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[18.521767] (unitree_guide_controller) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[18.524267] (unitree_guide_controller) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[18.525385] (unitree_guide_controller) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the style conventions in PEP 257\n"}
+[18.531216] (unitree_guide_controller) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[18.531520] (unitree_guide_controller) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[18.532885] (unitree_guide_controller) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[18.542539] (unitree_guide_controller) StdoutLine: {'line': b'-- Configuring done\n'}
+[18.564215] (-) TimerEvent: {}
+[18.636932] (unitree_guide_controller) StdoutLine: {'line': b'-- Generating done\n'}
+[18.659944] (unitree_guide_controller) StdoutLine: {'line': b'-- Build files have been written to: /home/danya/a1_ros2_foxy_sim/src/build/unitree_guide_controller\n'}
+[18.664419] (-) TimerEvent: {}
+[18.677517] (unitree_guide_controller) CommandEnded: {'returncode': 0}
+[18.678804] (unitree_guide_controller) JobProgress: {'identifier': 'unitree_guide_controller', 'progress': 'build'}
+[18.683448] (unitree_guide_controller) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/danya/a1_ros2_foxy_sim/src/build/unitree_guide_controller', '--', '-j8', '-l8'], 'cwd': '/home/danya/a1_ros2_foxy_sim/src/build/unitree_guide_controller', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'danya'), ('LC_TIME', 'ru_RU.UTF-8'), ('SSH_AGENT_PID', '1117'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/danya/a1_ros2_foxy_sim/src/install/controller_common/lib:/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/danya'), ('OLDPWD', '/home/danya'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ru_RU.UTF-8'), ('MANAGERPID', '972'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=87a732de48097f894e4948fb67d95dfd'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'danya'), ('JOURNAL_STREAM', '8:39285'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'danya'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/danya/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/danya:@/tmp/.ICE-unix/1177,unix/danya:/tmp/.ICE-unix/1177'), ('INVOCATION_ID', '963dc6352c6d417cb7817520ea277f11'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ru_RU.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/4a4d8282_5d92_4f05_8daa_5e3869c86ffc'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ru_RU.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.117'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/danya/a1_ros2_foxy_sim/src/install/controller_common:/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ru_RU.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ru_RU.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ru_RU.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/danya/a1_ros2_foxy_sim/src/build/unitree_guide_controller'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=87a732de48097f894e4948fb67d95dfd'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'ru_RU.UTF-8'), ('LC_PAPER', 'ru_RU.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/danya/a1_ros2_foxy_sim/src/install/controller_common:/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs:/opt/ros/foxy')]), 'shell': False}
+[18.764520] (-) TimerEvent: {}
+[18.794604] (unitree_guide_controller) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target unitree_guide_controller\x1b[0m\n'}
+[18.864712] (-) TimerEvent: {}
+[18.965281] (-) TimerEvent: {}
+[19.065820] (-) TimerEvent: {}
+[19.162313] (unitree_guide_controller) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding CXX object CMakeFiles/unitree_guide_controller.dir/src/FSM/StateBalanceTest.cpp.o\x1b[0m\n'}
+[19.162728] (unitree_guide_controller) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding CXX object CMakeFiles/unitree_guide_controller.dir/src/FSM/StateTrotting.cpp.o\x1b[0m\n'}
+[19.162894] (unitree_guide_controller) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding CXX object CMakeFiles/unitree_guide_controller.dir/src/UnitreeGuideController.cpp.o\x1b[0m\n'}
+[19.163145] (unitree_guide_controller) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/unitree_guide_controller.dir/src/FSM/StateSwingTest.cpp.o\x1b[0m\n'}
+[19.163451] (unitree_guide_controller) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/unitree_guide_controller.dir/src/robot/QuadrupedRobot.cpp.o\x1b[0m\n'}
+[19.163976] (unitree_guide_controller) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/unitree_guide_controller.dir/src/FSM/StateFixedStand.cpp.o\x1b[0m\n'}
+[19.164228] (unitree_guide_controller) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/unitree_guide_controller.dir/src/FSM/StateFreeStand.cpp.o\x1b[0m\n'}
+[19.165990] (-) TimerEvent: {}
+[19.184039] (unitree_guide_controller) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding CXX object CMakeFiles/unitree_guide_controller.dir/src/robot/RobotLeg.cpp.o\x1b[0m\n'}
+[19.266133] (-) TimerEvent: {}
+[19.366610] (-) TimerEvent: {}
+[19.467106] (-) TimerEvent: {}
+[19.567812] (-) TimerEvent: {}
+[19.668544] (-) TimerEvent: {}
+[19.769016] (-) TimerEvent: {}
+[19.869521] (-) TimerEvent: {}
+[19.970129] (-) TimerEvent: {}
+[20.070666] (-) TimerEvent: {}
+[20.171237] (-) TimerEvent: {}
+[20.272122] (-) TimerEvent: {}
+[20.372657] (-) TimerEvent: {}
+[20.473179] (-) TimerEvent: {}
+[20.556034] (unitree_guide_controller) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding CXX object CMakeFiles/unitree_guide_controller.dir/src/control/Estimator.cpp.o\x1b[0m\n'}
+[20.573339] (-) TimerEvent: {}
+[20.673868] (-) TimerEvent: {}
+[20.774417] (-) TimerEvent: {}
+[20.875011] (-) TimerEvent: {}
+[20.975596] (-) TimerEvent: {}
+[21.076136] (-) TimerEvent: {}
+[21.176746] (-) TimerEvent: {}
+[21.277481] (-) TimerEvent: {}
+[21.378020] (-) TimerEvent: {}
+[21.478568] (-) TimerEvent: {}
+[21.579085] (-) TimerEvent: {}
+[21.679603] (-) TimerEvent: {}
+[21.780124] (-) TimerEvent: {}
+[21.880701] (-) TimerEvent: {}
+[21.981259] (-) TimerEvent: {}
+[22.081760] (-) TimerEvent: {}
+[22.182354] (-) TimerEvent: {}
+[22.282850] (-) TimerEvent: {}
+[22.383610] (-) TimerEvent: {}
+[22.484129] (-) TimerEvent: {}
+[22.584641] (-) TimerEvent: {}
+[22.685141] (-) TimerEvent: {}
+[22.785670] (-) TimerEvent: {}
+[22.886189] (-) TimerEvent: {}
+[22.986692] (-) TimerEvent: {}
+[23.087286] (-) TimerEvent: {}
+[23.188023] (-) TimerEvent: {}
+[23.288534] (-) TimerEvent: {}
+[23.389046] (-) TimerEvent: {}
+[23.489791] (-) TimerEvent: {}
+[23.590269] (-) TimerEvent: {}
+[23.690776] (-) TimerEvent: {}
+[23.791319] (-) TimerEvent: {}
+[23.892157] (-) TimerEvent: {}
+[23.992692] (-) TimerEvent: {}
+[24.093203] (-) TimerEvent: {}
+[24.193754] (-) TimerEvent: {}
+[24.294302] (-) TimerEvent: {}
+[24.394816] (-) TimerEvent: {}
+[24.495351] (-) TimerEvent: {}
+[24.595900] (-) TimerEvent: {}
+[24.696717] (-) TimerEvent: {}
+[24.797464] (-) TimerEvent: {}
+[24.898244] (-) TimerEvent: {}
+[24.998855] (-) TimerEvent: {}
+[25.099424] (-) TimerEvent: {}
+[25.199984] (-) TimerEvent: {}
+[25.300929] (-) TimerEvent: {}
+[25.401694] (-) TimerEvent: {}
+[25.502203] (-) TimerEvent: {}
+[25.600437] (unitree_guide_controller) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/unitree_guide_controller.dir/src/control/LowPassFilter.cpp.o\x1b[0m\n'}
+[25.602343] (-) TimerEvent: {}
+[25.702847] (-) TimerEvent: {}
+[25.803434] (-) TimerEvent: {}
+[25.904152] (-) TimerEvent: {}
+[26.004954] (-) TimerEvent: {}
+[26.105486] (-) TimerEvent: {}
+[26.206043] (-) TimerEvent: {}
+[26.269397] (unitree_guide_controller) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding CXX object CMakeFiles/unitree_guide_controller.dir/src/control/BalanceCtrl.cpp.o\x1b[0m\n'}
+[26.306224] (-) TimerEvent: {}
+[26.406755] (-) TimerEvent: {}
+[26.507382] (-) TimerEvent: {}
+[26.607951] (-) TimerEvent: {}
+[26.708531] (-) TimerEvent: {}
+[26.809018] (-) TimerEvent: {}
+[26.909576] (-) TimerEvent: {}
+[27.010642] (-) TimerEvent: {}
+[27.111152] (-) TimerEvent: {}
+[27.211701] (-) TimerEvent: {}
+[27.312272] (-) TimerEvent: {}
+[27.412900] (-) TimerEvent: {}
+[27.513412] (-) TimerEvent: {}
+[27.614177] (-) TimerEvent: {}
+[27.714918] (-) TimerEvent: {}
+[27.815473] (-) TimerEvent: {}
+[27.916148] (-) TimerEvent: {}
+[28.016692] (-) TimerEvent: {}
+[28.117447] (-) TimerEvent: {}
+[28.220952] (-) TimerEvent: {}
+[28.321526] (-) TimerEvent: {}
+[28.328720] (unitree_guide_controller) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/unitree_guide_controller.dir/src/quadProgpp/Array.cc.o\x1b[0m\n'}
+[28.421692] (-) TimerEvent: {}
+[28.522179] (-) TimerEvent: {}
+[28.622650] (-) TimerEvent: {}
+[28.723116] (-) TimerEvent: {}
+[28.755419] (unitree_guide_controller) StdoutLine: {'line': b'[ 76%] \x1b[32mBuilding CXX object CMakeFiles/unitree_guide_controller.dir/src/quadProgpp/QuadProg++.cc.o\x1b[0m\n'}
+[28.823276] (-) TimerEvent: {}
+[28.923832] (-) TimerEvent: {}
+[29.024445] (-) TimerEvent: {}
+[29.125053] (-) TimerEvent: {}
+[29.225539] (-) TimerEvent: {}
+[29.326035] (-) TimerEvent: {}
+[29.426545] (-) TimerEvent: {}
+[29.527063] (-) TimerEvent: {}
+[29.627554] (-) TimerEvent: {}
+[29.728077] (-) TimerEvent: {}
+[29.828573] (-) TimerEvent: {}
+[29.929275] (-) TimerEvent: {}
+[30.030088] (-) TimerEvent: {}
+[30.083479] (unitree_guide_controller) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding CXX object CMakeFiles/unitree_guide_controller.dir/src/gait/WaveGenerator.cpp.o\x1b[0m\n'}
+[30.130261] (-) TimerEvent: {}
+[30.230774] (-) TimerEvent: {}
+[30.331270] (-) TimerEvent: {}
+[30.431785] (-) TimerEvent: {}
+[30.532262] (-) TimerEvent: {}
+[30.632772] (-) TimerEvent: {}
+[30.733303] (-) TimerEvent: {}
+[30.833873] (-) TimerEvent: {}
+[30.934410] (-) TimerEvent: {}
+[30.985590] (unitree_guide_controller) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding CXX object CMakeFiles/unitree_guide_controller.dir/src/gait/FeetEndCalc.cpp.o\x1b[0m\n'}
+[31.034698] (-) TimerEvent: {}
+[31.135899] (-) TimerEvent: {}
+[31.226361] (unitree_guide_controller) StdoutLine: {'line': b'[ 94%] \x1b[32mBuilding CXX object CMakeFiles/unitree_guide_controller.dir/src/gait/GaitGenerator.cpp.o\x1b[0m\n'}
+[31.236011] (-) TimerEvent: {}
+[31.336532] (-) TimerEvent: {}
+[31.437111] (-) TimerEvent: {}
+[31.537661] (-) TimerEvent: {}
+[31.647556] (-) TimerEvent: {}
+[31.748041] (-) TimerEvent: {}
+[31.848510] (-) TimerEvent: {}
+[31.948948] (-) TimerEvent: {}
+[32.049395] (-) TimerEvent: {}
+[32.149849] (-) TimerEvent: {}
+[32.250302] (-) TimerEvent: {}
+[32.350732] (-) TimerEvent: {}
+[32.451235] (-) TimerEvent: {}
+[32.551728] (-) TimerEvent: {}
+[32.652423] (-) TimerEvent: {}
+[32.752889] (-) TimerEvent: {}
+[32.853400] (-) TimerEvent: {}
+[32.953920] (-) TimerEvent: {}
+[33.054652] (-) TimerEvent: {}
+[33.155137] (-) TimerEvent: {}
+[33.255607] (-) TimerEvent: {}
+[33.356105] (-) TimerEvent: {}
+[33.456518] (-) TimerEvent: {}
+[33.556962] (-) TimerEvent: {}
+[33.657422] (-) TimerEvent: {}
+[33.757886] (-) TimerEvent: {}
+[33.858407] (-) TimerEvent: {}
+[33.958908] (-) TimerEvent: {}
+[34.059377] (-) TimerEvent: {}
+[34.159896] (-) TimerEvent: {}
+[34.260394] (-) TimerEvent: {}
+[34.360939] (-) TimerEvent: {}
+[34.461661] (-) TimerEvent: {}
+[34.562124] (-) TimerEvent: {}
+[34.662568] (-) TimerEvent: {}
+[34.763060] (-) TimerEvent: {}
+[34.863542] (-) TimerEvent: {}
+[34.964008] (-) TimerEvent: {}
+[35.064500] (-) TimerEvent: {}
+[35.164975] (-) TimerEvent: {}
+[35.265472] (-) TimerEvent: {}
+[35.366107] (-) TimerEvent: {}
+[35.466576] (-) TimerEvent: {}
+[35.567156] (-) TimerEvent: {}
+[35.667649] (-) TimerEvent: {}
+[35.768147] (-) TimerEvent: {}
+[35.868598] (-) TimerEvent: {}
+[35.969085] (-) TimerEvent: {}
+[36.069562] (-) TimerEvent: {}
+[36.170002] (-) TimerEvent: {}
+[36.270539] (-) TimerEvent: {}
+[36.371043] (-) TimerEvent: {}
+[36.471584] (-) TimerEvent: {}
+[36.572983] (-) TimerEvent: {}
+[36.673454] (-) TimerEvent: {}
+[36.773930] (-) TimerEvent: {}
+[36.874425] (-) TimerEvent: {}
+[36.974968] (-) TimerEvent: {}
+[37.075523] (-) TimerEvent: {}
+[37.176029] (-) TimerEvent: {}
+[37.276560] (-) TimerEvent: {}
+[37.377037] (-) TimerEvent: {}
+[37.477506] (-) TimerEvent: {}
+[37.578055] (-) TimerEvent: {}
+[37.678568] (-) TimerEvent: {}
+[37.779074] (-) TimerEvent: {}
+[37.879609] (-) TimerEvent: {}
+[37.980102] (-) TimerEvent: {}
+[38.080597] (-) TimerEvent: {}
+[38.181052] (-) TimerEvent: {}
+[38.281558] (-) TimerEvent: {}
+[38.382062] (-) TimerEvent: {}
+[38.482562] (-) TimerEvent: {}
+[38.583073] (-) TimerEvent: {}
+[38.683575] (-) TimerEvent: {}
+[38.784084] (-) TimerEvent: {}
+[38.884571] (-) TimerEvent: {}
+[38.984989] (-) TimerEvent: {}
+[39.085431] (-) TimerEvent: {}
+[39.185872] (-) TimerEvent: {}
+[39.286348] (-) TimerEvent: {}
+[39.386791] (-) TimerEvent: {}
+[39.487263] (-) TimerEvent: {}
+[39.588099] (-) TimerEvent: {}
+[39.688913] (-) TimerEvent: {}
+[39.789355] (-) TimerEvent: {}
+[39.889818] (-) TimerEvent: {}
+[39.990301] (-) TimerEvent: {}
+[40.090786] (-) TimerEvent: {}
+[40.191619] (-) TimerEvent: {}
+[40.292495] (-) TimerEvent: {}
+[40.392949] (-) TimerEvent: {}
+[40.493409] (-) TimerEvent: {}
+[40.593829] (-) TimerEvent: {}
+[40.694263] (-) TimerEvent: {}
+[40.794726] (-) TimerEvent: {}
+[40.895222] (-) TimerEvent: {}
+[40.995918] (-) TimerEvent: {}
+[41.096824] (-) TimerEvent: {}
+[41.197310] (-) TimerEvent: {}
+[41.297769] (-) TimerEvent: {}
+[41.398265] (-) TimerEvent: {}
+[41.498979] (-) TimerEvent: {}
+[41.599658] (-) TimerEvent: {}
+[41.700344] (-) TimerEvent: {}
+[41.800802] (-) TimerEvent: {}
+[41.901240] (-) TimerEvent: {}
+[42.001739] (-) TimerEvent: {}
+[42.102250] (-) TimerEvent: {}
+[42.202707] (-) TimerEvent: {}
+[42.303388] (-) TimerEvent: {}
+[42.403845] (-) TimerEvent: {}
+[42.504570] (-) TimerEvent: {}
+[42.605092] (-) TimerEvent: {}
+[42.705630] (-) TimerEvent: {}
+[42.806113] (-) TimerEvent: {}
+[42.906656] (-) TimerEvent: {}
+[43.007176] (-) TimerEvent: {}
+[43.107738] (-) TimerEvent: {}
+[43.208286] (-) TimerEvent: {}
+[43.308842] (-) TimerEvent: {}
+[43.409324] (-) TimerEvent: {}
+[43.509799] (-) TimerEvent: {}
+[43.610277] (-) TimerEvent: {}
+[43.710810] (-) TimerEvent: {}
+[43.811543] (-) TimerEvent: {}
+[43.912016] (-) TimerEvent: {}
+[44.012540] (-) TimerEvent: {}
+[44.113083] (-) TimerEvent: {}
+[44.213633] (-) TimerEvent: {}
+[44.314172] (-) TimerEvent: {}
+[44.414693] (-) TimerEvent: {}
+[44.515235] (-) TimerEvent: {}
+[44.615773] (-) TimerEvent: {}
+[44.716289] (-) TimerEvent: {}
+[44.816841] (-) TimerEvent: {}
+[44.917326] (-) TimerEvent: {}
+[45.017816] (-) TimerEvent: {}
+[45.118358] (-) TimerEvent: {}
+[45.218904] (-) TimerEvent: {}
+[45.319432] (-) TimerEvent: {}
+[45.420384] (-) TimerEvent: {}
+[45.520928] (-) TimerEvent: {}
+[45.621474] (-) TimerEvent: {}
+[45.721995] (-) TimerEvent: {}
+[45.822528] (-) TimerEvent: {}
+[45.923093] (-) TimerEvent: {}
+[46.023621] (-) TimerEvent: {}
+[46.124133] (-) TimerEvent: {}
+[46.225073] (-) TimerEvent: {}
+[46.325556] (-) TimerEvent: {}
+[46.426082] (-) TimerEvent: {}
+[46.526631] (-) TimerEvent: {}
+[46.627150] (-) TimerEvent: {}
+[46.727707] (-) TimerEvent: {}
+[46.828263] (-) TimerEvent: {}
+[46.928798] (-) TimerEvent: {}
+[47.029323] (-) TimerEvent: {}
+[47.129864] (-) TimerEvent: {}
+[47.230402] (-) TimerEvent: {}
+[47.330949] (-) TimerEvent: {}
+[47.431492] (-) TimerEvent: {}
+[47.531976] (-) TimerEvent: {}
+[47.632517] (-) TimerEvent: {}
+[47.733054] (-) TimerEvent: {}
+[47.833586] (-) TimerEvent: {}
+[47.934069] (-) TimerEvent: {}
+[48.034578] (-) TimerEvent: {}
+[48.135118] (-) TimerEvent: {}
+[48.235692] (-) TimerEvent: {}
+[48.336256] (-) TimerEvent: {}
+[48.436837] (-) TimerEvent: {}
+[48.537391] (-) TimerEvent: {}
+[48.637887] (-) TimerEvent: {}
+[48.738421] (-) TimerEvent: {}
+[48.838951] (-) TimerEvent: {}
+[48.939493] (-) TimerEvent: {}
+[49.040037] (-) TimerEvent: {}
+[49.140786] (-) TimerEvent: {}
+[49.241324] (-) TimerEvent: {}
+[49.341895] (-) TimerEvent: {}
+[49.442458] (-) TimerEvent: {}
+[49.543002] (-) TimerEvent: {}
+[49.643513] (-) TimerEvent: {}
+[49.744022] (-) TimerEvent: {}
+[49.844570] (-) TimerEvent: {}
+[49.945090] (-) TimerEvent: {}
+[50.045556] (-) TimerEvent: {}
+[50.146063] (-) TimerEvent: {}
+[50.246567] (-) TimerEvent: {}
+[50.347065] (-) TimerEvent: {}
+[50.447541] (-) TimerEvent: {}
+[50.547965] (-) TimerEvent: {}
+[50.648466] (-) TimerEvent: {}
+[50.748891] (-) TimerEvent: {}
+[50.849317] (-) TimerEvent: {}
+[50.949783] (-) TimerEvent: {}
+[51.050309] (-) TimerEvent: {}
+[51.150776] (-) TimerEvent: {}
+[51.251248] (-) TimerEvent: {}
+[51.351733] (-) TimerEvent: {}
+[51.452205] (-) TimerEvent: {}
+[51.552694] (-) TimerEvent: {}
+[51.653163] (-) TimerEvent: {}
+[51.753630] (-) TimerEvent: {}
+[51.854088] (-) TimerEvent: {}
+[51.954522] (-) TimerEvent: {}
+[52.054984] (-) TimerEvent: {}
+[52.155669] (-) TimerEvent: {}
+[52.256172] (-) TimerEvent: {}
+[52.356864] (-) TimerEvent: {}
+[52.457282] (-) TimerEvent: {}
+[52.557748] (-) TimerEvent: {}
+[52.658165] (-) TimerEvent: {}
+[52.758626] (-) TimerEvent: {}
+[52.859069] (-) TimerEvent: {}
+[52.959480] (-) TimerEvent: {}
+[53.059949] (-) TimerEvent: {}
+[53.160777] (-) TimerEvent: {}
+[53.261231] (-) TimerEvent: {}
+[53.361686] (-) TimerEvent: {}
+[53.462155] (-) TimerEvent: {}
+[53.562653] (-) TimerEvent: {}
+[53.663326] (-) TimerEvent: {}
+[53.763803] (-) TimerEvent: {}
+[53.864277] (-) TimerEvent: {}
+[53.964772] (-) TimerEvent: {}
+[54.065234] (-) TimerEvent: {}
+[54.165682] (-) TimerEvent: {}
+[54.266153] (-) TimerEvent: {}
+[54.366629] (-) TimerEvent: {}
+[54.467148] (-) TimerEvent: {}
+[54.567638] (-) TimerEvent: {}
+[54.668189] (-) TimerEvent: {}
+[54.768718] (-) TimerEvent: {}
+[54.869225] (-) TimerEvent: {}
+[54.969719] (-) TimerEvent: {}
+[55.070189] (-) TimerEvent: {}
+[55.170652] (-) TimerEvent: {}
+[55.271099] (-) TimerEvent: {}
+[55.371555] (-) TimerEvent: {}
+[55.395870] (unitree_guide_controller) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libunitree_guide_controller.so\x1b[0m\n'}
+[55.471748] (-) TimerEvent: {}
+[55.572276] (-) TimerEvent: {}
+[55.672841] (-) TimerEvent: {}
+[55.773432] (-) TimerEvent: {}
+[55.844176] (unitree_guide_controller) StdoutLine: {'line': b'[100%] Built target unitree_guide_controller\n'}
+[55.872266] (unitree_guide_controller) CommandEnded: {'returncode': 0}
+[55.876203] (-) TimerEvent: {}
+[55.876999] (unitree_guide_controller) JobProgress: {'identifier': 'unitree_guide_controller', 'progress': 'install'}
+[55.881154] (unitree_guide_controller) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/danya/a1_ros2_foxy_sim/src/build/unitree_guide_controller'], 'cwd': '/home/danya/a1_ros2_foxy_sim/src/build/unitree_guide_controller', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'danya'), ('LC_TIME', 'ru_RU.UTF-8'), ('SSH_AGENT_PID', '1117'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/danya/a1_ros2_foxy_sim/src/install/controller_common/lib:/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/danya'), ('OLDPWD', '/home/danya'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ru_RU.UTF-8'), ('MANAGERPID', '972'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=87a732de48097f894e4948fb67d95dfd'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'danya'), ('JOURNAL_STREAM', '8:39285'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'danya'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/danya/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/danya:@/tmp/.ICE-unix/1177,unix/danya:/tmp/.ICE-unix/1177'), ('INVOCATION_ID', '963dc6352c6d417cb7817520ea277f11'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ru_RU.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/4a4d8282_5d92_4f05_8daa_5e3869c86ffc'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ru_RU.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.117'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/danya/a1_ros2_foxy_sim/src/install/controller_common:/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ru_RU.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ru_RU.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ru_RU.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/danya/a1_ros2_foxy_sim/src/build/unitree_guide_controller'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=87a732de48097f894e4948fb67d95dfd'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'ru_RU.UTF-8'), ('LC_PAPER', 'ru_RU.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/danya/a1_ros2_foxy_sim/src/install/controller_common:/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs:/opt/ros/foxy')]), 'shell': False}
+[55.902929] (unitree_guide_controller) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[55.903445] (unitree_guide_controller) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/unitree_guide_controller/share/unitree_guide_controller/unitree_guide_controller.xml\n'}
+[55.903765] (unitree_guide_controller) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/unitree_guide_controller/include/unitree_guide_controller\n'}
+[55.903999] (unitree_guide_controller) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/unitree_guide_controller/include/unitree_guide_controller/unitree_guide_controller\n'}
+[55.904290] (unitree_guide_controller) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/unitree_guide_controller/include/unitree_guide_controller/unitree_guide_controller/UnitreeGuideController.h\n'}
+[55.904632] (unitree_guide_controller) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/unitree_guide_controller/include/unitree_guide_controller/unitree_guide_controller/control\n'}
+[55.904880] (unitree_guide_controller) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/unitree_guide_controller/include/unitree_guide_controller/unitree_guide_controller/control/LowPassFilter.h\n'}
+[55.905088] (unitree_guide_controller) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/unitree_guide_controller/include/unitree_guide_controller/unitree_guide_controller/control/Estimator.h\n'}
+[55.905417] (unitree_guide_controller) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/unitree_guide_controller/include/unitree_guide_controller/unitree_guide_controller/control/CtrlComponent.h\n'}
+[55.905627] (unitree_guide_controller) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/unitree_guide_controller/include/unitree_guide_controller/unitree_guide_controller/control/BalanceCtrl.h\n'}
+[55.905810] (unitree_guide_controller) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/unitree_guide_controller/include/unitree_guide_controller/unitree_guide_controller/common\n'}
+[55.905995] (unitree_guide_controller) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/unitree_guide_controller/include/unitree_guide_controller/unitree_guide_controller/common/mathTools.h\n'}
+[55.906152] (unitree_guide_controller) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/unitree_guide_controller/include/unitree_guide_controller/unitree_guide_controller/common/mathTypes.h\n'}
+[55.906309] (unitree_guide_controller) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/unitree_guide_controller/include/unitree_guide_controller/unitree_guide_controller/robot\n'}
+[55.906466] (unitree_guide_controller) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/unitree_guide_controller/include/unitree_guide_controller/unitree_guide_controller/robot/RobotLeg.h\n'}
+[55.906720] (unitree_guide_controller) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/unitree_guide_controller/include/unitree_guide_controller/unitree_guide_controller/robot/QuadrupedRobot.h\n'}
+[55.906882] (unitree_guide_controller) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/unitree_guide_controller/include/unitree_guide_controller/unitree_guide_controller/FSM\n'}
+[55.907039] (unitree_guide_controller) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/unitree_guide_controller/include/unitree_guide_controller/unitree_guide_controller/FSM/StateFreeStand.h\n'}
+[55.907197] (unitree_guide_controller) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/unitree_guide_controller/include/unitree_guide_controller/unitree_guide_controller/FSM/StateSwingTest.h\n'}
+[55.907416] (unitree_guide_controller) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/unitree_guide_controller/include/unitree_guide_controller/unitree_guide_controller/FSM/StateBalanceTest.h\n'}
+[55.907692] (unitree_guide_controller) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/unitree_guide_controller/include/unitree_guide_controller/unitree_guide_controller/FSM/StateFixedStand.h\n'}
+[55.907849] (unitree_guide_controller) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/unitree_guide_controller/include/unitree_guide_controller/unitree_guide_controller/FSM/StateTrotting.h\n'}
+[55.908007] (unitree_guide_controller) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/unitree_guide_controller/include/unitree_guide_controller/unitree_guide_controller/gait\n'}
+[55.908222] (unitree_guide_controller) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/unitree_guide_controller/include/unitree_guide_controller/unitree_guide_controller/gait/GaitGenerator.h\n'}
+[55.908372] (unitree_guide_controller) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/unitree_guide_controller/include/unitree_guide_controller/unitree_guide_controller/gait/FeetEndCalc.h\n'}
+[55.908598] (unitree_guide_controller) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/unitree_guide_controller/include/unitree_guide_controller/unitree_guide_controller/gait/WaveGenerator.h\n'}
+[55.908754] (unitree_guide_controller) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/unitree_guide_controller/lib/unitree_guide_controller/libunitree_guide_controller.so\n'}
+[55.912059] (unitree_guide_controller) StdoutLine: {'line': b'-- Set runtime path of "/home/danya/a1_ros2_foxy_sim/src/install/unitree_guide_controller/lib/unitree_guide_controller/libunitree_guide_controller.so" to ""\n'}
+[55.912291] (unitree_guide_controller) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/unitree_guide_controller/share/unitree_guide_controller//launch\n'}
+[55.912666] (unitree_guide_controller) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/unitree_guide_controller/share/unitree_guide_controller//launch/gazebo_classic.launch.py\n'}
+[55.913264] (unitree_guide_controller) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/unitree_guide_controller/share/unitree_guide_controller//launch/gazebo.launch.py\n'}
+[55.913735] (unitree_guide_controller) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/unitree_guide_controller/share/unitree_guide_controller//launch/mujoco.launch.py\n'}
+[55.914873] (unitree_guide_controller) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/unitree_guide_controller/share/unitree_guide_controller/environment/library_path.sh\n'}
+[55.915468] (unitree_guide_controller) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/unitree_guide_controller/share/unitree_guide_controller/environment/library_path.dsv\n'}
+[55.916083] (unitree_guide_controller) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/unitree_guide_controller/share/ament_index/resource_index/package_run_dependencies/unitree_guide_controller\n'}
+[55.916612] (unitree_guide_controller) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/unitree_guide_controller/share/ament_index/resource_index/parent_prefix_path/unitree_guide_controller\n'}
+[55.917209] (unitree_guide_controller) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/unitree_guide_controller/share/unitree_guide_controller/environment/ament_prefix_path.sh\n'}
+[55.917976] (unitree_guide_controller) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/unitree_guide_controller/share/unitree_guide_controller/environment/ament_prefix_path.dsv\n'}
+[55.918383] (unitree_guide_controller) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/unitree_guide_controller/share/unitree_guide_controller/environment/path.sh\n'}
+[55.918820] (unitree_guide_controller) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/unitree_guide_controller/share/unitree_guide_controller/environment/path.dsv\n'}
+[55.919221] (unitree_guide_controller) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/unitree_guide_controller/share/unitree_guide_controller/local_setup.bash\n'}
+[55.919618] (unitree_guide_controller) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/unitree_guide_controller/share/unitree_guide_controller/local_setup.sh\n'}
+[55.919983] (unitree_guide_controller) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/unitree_guide_controller/share/unitree_guide_controller/local_setup.zsh\n'}
+[55.920341] (unitree_guide_controller) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/unitree_guide_controller/share/unitree_guide_controller/local_setup.dsv\n'}
+[55.920784] (unitree_guide_controller) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/unitree_guide_controller/share/unitree_guide_controller/package.dsv\n'}
+[55.921253] (unitree_guide_controller) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/unitree_guide_controller/share/ament_index/resource_index/packages/unitree_guide_controller\n'}
+[55.921677] (unitree_guide_controller) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/unitree_guide_controller/share/ament_index/resource_index/controller_interface__pluginlib__plugin/unitree_guide_controller\n'}
+[55.922254] (unitree_guide_controller) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/unitree_guide_controller/share/unitree_guide_controller/cmake/export_unitree_guide_controllerExport.cmake\n'}
+[55.922755] (unitree_guide_controller) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/unitree_guide_controller/share/unitree_guide_controller/cmake/export_unitree_guide_controllerExport-release.cmake\n'}
+[55.923168] (unitree_guide_controller) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/unitree_guide_controller/share/unitree_guide_controller/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[55.923568] (unitree_guide_controller) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/unitree_guide_controller/share/unitree_guide_controller/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[55.923949] (unitree_guide_controller) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/unitree_guide_controller/share/unitree_guide_controller/cmake/unitree_guide_controllerConfig.cmake\n'}
+[55.924272] (unitree_guide_controller) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/unitree_guide_controller/share/unitree_guide_controller/cmake/unitree_guide_controllerConfig-version.cmake\n'}
+[55.924695] (unitree_guide_controller) StdoutLine: {'line': b'-- Installing: /home/danya/a1_ros2_foxy_sim/src/install/unitree_guide_controller/share/unitree_guide_controller/package.xml\n'}
+[55.929721] (unitree_guide_controller) CommandEnded: {'returncode': 0}
+[55.958028] (unitree_guide_controller) JobEnded: {'identifier': 'unitree_guide_controller', 'rc': 0}
+[55.959346] (-) EventReactorShutdown: {}

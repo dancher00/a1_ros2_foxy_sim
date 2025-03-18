@@ -1,0 +1,578 @@
+[0.353s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-up-to', 'unitree_guide_controller']
+[0.353s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f3efb0eb2b0>>, merge_install=False, metas=['./colcon.meta'], mixin=None, mixin_files=None, mixin_verb=('build',), packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=['unitree_guide_controller'], packages_up_to_regex=None, parallel_workers=8, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f3efb0eb2b0>, verb_name='build', verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7f3efb0eb790>)
+[0.428s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.428s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.428s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.428s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.428s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.428s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.428s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/danya/a1_ros2_foxy_sim/src'
+[0.428s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.428s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.429s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.429s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.429s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.429s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.429s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.429s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.429s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.454s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.454s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.454s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.454s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.454s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.454s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.454s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.454s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.455s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.455s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.455s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.455s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control) by extensions ['ignore', 'ignore_ament_install']
+[0.455s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control) by extension 'ignore'
+[0.455s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control) by extension 'ignore_ament_install'
+[0.455s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control) by extensions ['colcon_pkg']
+[0.455s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control) by extension 'colcon_pkg'
+[0.455s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control) by extensions ['colcon_meta']
+[0.455s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control) by extension 'colcon_meta'
+[0.455s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control) by extensions ['ros']
+[0.455s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control) by extension 'ros'
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control) by extensions ['cmake', 'python']
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control) by extension 'cmake'
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control) by extension 'python'
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control) by extensions ['python_setup_py']
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control) by extension 'python_setup_py'
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/LICENSES) by extensions ['ignore', 'ignore_ament_install']
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/LICENSES) by extension 'ignore'
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/LICENSES) by extension 'ignore_ament_install'
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/LICENSES) by extensions ['colcon_pkg']
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/LICENSES) by extension 'colcon_pkg'
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/LICENSES) by extensions ['colcon_meta']
+[0.457s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/LICENSES) by extension 'colcon_meta'
+[0.457s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/LICENSES) by extensions ['ros']
+[0.457s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/LICENSES) by extension 'ros'
+[0.457s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/LICENSES) by extensions ['cmake', 'python']
+[0.457s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/LICENSES) by extension 'cmake'
+[0.457s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/LICENSES) by extension 'python'
+[0.457s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/LICENSES) by extensions ['python_setup_py']
+[0.457s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/LICENSES) by extension 'python_setup_py'
+[0.457s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/LICENSES/legged_control) by extensions ['ignore', 'ignore_ament_install']
+[0.457s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/LICENSES/legged_control) by extension 'ignore'
+[0.457s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/LICENSES/legged_control) by extension 'ignore_ament_install'
+[0.457s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/LICENSES/legged_control) by extensions ['colcon_pkg']
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/LICENSES/legged_control) by extension 'colcon_pkg'
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/LICENSES/legged_control) by extensions ['colcon_meta']
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/LICENSES/legged_control) by extension 'colcon_meta'
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/LICENSES/legged_control) by extensions ['ros']
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/LICENSES/legged_control) by extension 'ros'
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/LICENSES/legged_control) by extensions ['cmake', 'python']
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/LICENSES/legged_control) by extension 'cmake'
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/LICENSES/legged_control) by extension 'python'
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/LICENSES/legged_control) by extensions ['python_setup_py']
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/LICENSES/legged_control) by extension 'python_setup_py'
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/LICENSES/unitree_guide) by extensions ['ignore', 'ignore_ament_install']
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/LICENSES/unitree_guide) by extension 'ignore'
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/LICENSES/unitree_guide) by extension 'ignore_ament_install'
+[0.459s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/LICENSES/unitree_guide) by extensions ['colcon_pkg']
+[0.459s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/LICENSES/unitree_guide) by extension 'colcon_pkg'
+[0.459s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/LICENSES/unitree_guide) by extensions ['colcon_meta']
+[0.459s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/LICENSES/unitree_guide) by extension 'colcon_meta'
+[0.459s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/LICENSES/unitree_guide) by extensions ['ros']
+[0.459s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/LICENSES/unitree_guide) by extension 'ros'
+[0.459s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/LICENSES/unitree_guide) by extensions ['cmake', 'python']
+[0.459s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/LICENSES/unitree_guide) by extension 'cmake'
+[0.459s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/LICENSES/unitree_guide) by extension 'python'
+[0.459s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/LICENSES/unitree_guide) by extensions ['python_setup_py']
+[0.459s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/LICENSES/unitree_guide) by extension 'python_setup_py'
+[0.459s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/commands) by extensions ['ignore', 'ignore_ament_install']
+[0.459s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/commands) by extension 'ignore'
+[0.460s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/commands) by extension 'ignore_ament_install'
+[0.460s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/commands) by extensions ['colcon_pkg']
+[0.460s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/commands) by extension 'colcon_pkg'
+[0.460s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/commands) by extensions ['colcon_meta']
+[0.460s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/commands) by extension 'colcon_meta'
+[0.460s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/commands) by extensions ['ros']
+[0.460s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/commands) by extension 'ros'
+[0.460s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/commands) by extensions ['cmake', 'python']
+[0.460s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/commands) by extension 'cmake'
+[0.460s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/commands) by extension 'python'
+[0.460s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/commands) by extensions ['python_setup_py']
+[0.460s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/commands) by extension 'python_setup_py'
+[0.460s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/commands/control_input_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.461s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/commands/control_input_msgs) by extension 'ignore'
+[0.461s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/commands/control_input_msgs) by extension 'ignore_ament_install'
+[0.461s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/commands/control_input_msgs) by extensions ['colcon_pkg']
+[0.461s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/commands/control_input_msgs) by extension 'colcon_pkg'
+[0.461s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/commands/control_input_msgs) by extensions ['colcon_meta']
+[0.461s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/commands/control_input_msgs) by extension 'colcon_meta'
+[0.461s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/commands/control_input_msgs) by extensions ['ros']
+[0.461s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/commands/control_input_msgs) by extension 'ros'
+[0.465s] DEBUG:colcon.colcon_core.package_identification:Package 'quadruped_ros2_control/commands/control_input_msgs' with type 'ros.ament_cmake' and name 'control_input_msgs'
+[0.465s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/commands/joystick_input) by extensions ['ignore', 'ignore_ament_install']
+[0.465s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/commands/joystick_input) by extension 'ignore'
+[0.466s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/commands/joystick_input) by extension 'ignore_ament_install'
+[0.466s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/commands/joystick_input) by extensions ['colcon_pkg']
+[0.466s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/commands/joystick_input) by extension 'colcon_pkg'
+[0.466s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/commands/joystick_input) by extensions ['colcon_meta']
+[0.466s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/commands/joystick_input) by extension 'colcon_meta'
+[0.466s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/commands/joystick_input) by extensions ['ros']
+[0.466s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/commands/joystick_input) by extension 'ros'
+[0.467s] DEBUG:colcon.colcon_core.package_identification:Package 'quadruped_ros2_control/commands/joystick_input' with type 'ros.ament_cmake' and name 'joystick_input'
+[0.467s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/commands/keyboard_input) by extensions ['ignore', 'ignore_ament_install']
+[0.467s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/commands/keyboard_input) by extension 'ignore'
+[0.468s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/commands/keyboard_input) by extension 'ignore_ament_install'
+[0.468s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/commands/keyboard_input) by extensions ['colcon_pkg']
+[0.468s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/commands/keyboard_input) by extension 'colcon_pkg'
+[0.468s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/commands/keyboard_input) by extensions ['colcon_meta']
+[0.468s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/commands/keyboard_input) by extension 'colcon_meta'
+[0.468s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/commands/keyboard_input) by extensions ['ros']
+[0.468s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/commands/keyboard_input) by extension 'ros'
+[0.469s] DEBUG:colcon.colcon_core.package_identification:Package 'quadruped_ros2_control/commands/keyboard_input' with type 'ros.ament_cmake' and name 'keyboard_input'
+[0.469s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/controllers) by extensions ['ignore', 'ignore_ament_install']
+[0.469s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/controllers) by extension 'ignore'
+[0.469s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/controllers) by extension 'ignore_ament_install'
+[0.469s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/controllers) by extensions ['colcon_pkg']
+[0.469s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/controllers) by extension 'colcon_pkg'
+[0.469s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/controllers) by extensions ['colcon_meta']
+[0.470s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/controllers) by extension 'colcon_meta'
+[0.470s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/controllers) by extensions ['ros']
+[0.470s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/controllers) by extension 'ros'
+[0.470s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/controllers) by extensions ['cmake', 'python']
+[0.470s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/controllers) by extension 'cmake'
+[0.470s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/controllers) by extension 'python'
+[0.470s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/controllers) by extensions ['python_setup_py']
+[0.470s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/controllers) by extension 'python_setup_py'
+[0.470s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/controllers/leg_pd_controller) by extensions ['ignore', 'ignore_ament_install']
+[0.470s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/controllers/leg_pd_controller) by extension 'ignore'
+[0.470s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/controllers/leg_pd_controller) by extension 'ignore_ament_install'
+[0.470s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/controllers/leg_pd_controller) by extensions ['colcon_pkg']
+[0.471s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/controllers/leg_pd_controller) by extension 'colcon_pkg'
+[0.471s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/controllers/leg_pd_controller) by extensions ['colcon_meta']
+[0.471s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/controllers/leg_pd_controller) by extension 'colcon_meta'
+[0.471s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/controllers/leg_pd_controller) by extensions ['ros']
+[0.471s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/controllers/leg_pd_controller) by extension 'ros'
+[0.472s] DEBUG:colcon.colcon_core.package_identification:Package 'quadruped_ros2_control/controllers/leg_pd_controller' with type 'ros.ament_cmake' and name 'leg_pd_controller'
+[0.472s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/controllers/ocs2_quadruped_controller) by extensions ['ignore', 'ignore_ament_install']
+[0.472s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/controllers/ocs2_quadruped_controller) by extension 'ignore'
+[0.472s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/controllers/ocs2_quadruped_controller) by extension 'ignore_ament_install'
+[0.472s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/controllers/ocs2_quadruped_controller) by extensions ['colcon_pkg']
+[0.472s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/controllers/ocs2_quadruped_controller) by extension 'colcon_pkg'
+[0.472s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/controllers/ocs2_quadruped_controller) by extensions ['colcon_meta']
+[0.472s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/controllers/ocs2_quadruped_controller) by extension 'colcon_meta'
+[0.472s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/controllers/ocs2_quadruped_controller) by extensions ['ros']
+[0.472s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/controllers/ocs2_quadruped_controller) by extension 'ros'
+[0.474s] DEBUG:colcon.colcon_core.package_identification:Package 'quadruped_ros2_control/controllers/ocs2_quadruped_controller' with type 'ros.ament_cmake' and name 'ocs2_quadruped_controller'
+[0.474s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/controllers/rl_quadruped_controller) by extensions ['ignore', 'ignore_ament_install']
+[0.474s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/controllers/rl_quadruped_controller) by extension 'ignore'
+[0.475s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/controllers/rl_quadruped_controller) by extension 'ignore_ament_install'
+[0.475s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/controllers/rl_quadruped_controller) by extensions ['colcon_pkg']
+[0.475s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/controllers/rl_quadruped_controller) by extension 'colcon_pkg'
+[0.475s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/controllers/rl_quadruped_controller) by extensions ['colcon_meta']
+[0.475s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/controllers/rl_quadruped_controller) by extension 'colcon_meta'
+[0.475s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/controllers/rl_quadruped_controller) by extensions ['ros']
+[0.475s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/controllers/rl_quadruped_controller) by extension 'ros'
+[0.476s] DEBUG:colcon.colcon_core.package_identification:Package 'quadruped_ros2_control/controllers/rl_quadruped_controller' with type 'ros.ament_cmake' and name 'rl_quadruped_controller'
+[0.477s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/controllers/unitree_guide_controller) by extensions ['ignore', 'ignore_ament_install']
+[0.477s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/controllers/unitree_guide_controller) by extension 'ignore'
+[0.477s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/controllers/unitree_guide_controller) by extension 'ignore_ament_install'
+[0.477s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/controllers/unitree_guide_controller) by extensions ['colcon_pkg']
+[0.477s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/controllers/unitree_guide_controller) by extension 'colcon_pkg'
+[0.477s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/controllers/unitree_guide_controller) by extensions ['colcon_meta']
+[0.477s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/controllers/unitree_guide_controller) by extension 'colcon_meta'
+[0.477s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/controllers/unitree_guide_controller) by extensions ['ros']
+[0.477s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/controllers/unitree_guide_controller) by extension 'ros'
+[0.479s] DEBUG:colcon.colcon_core.package_identification:Package 'quadruped_ros2_control/controllers/unitree_guide_controller' with type 'ros.ament_cmake' and name 'unitree_guide_controller'
+[0.479s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/descriptions) by extensions ['ignore', 'ignore_ament_install']
+[0.479s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/descriptions) by extension 'ignore'
+[0.479s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/descriptions) by extension 'ignore_ament_install'
+[0.479s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/descriptions) by extensions ['colcon_pkg']
+[0.479s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/descriptions) by extension 'colcon_pkg'
+[0.479s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/descriptions) by extensions ['colcon_meta']
+[0.479s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/descriptions) by extension 'colcon_meta'
+[0.479s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/descriptions) by extensions ['ros']
+[0.479s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/descriptions) by extension 'ros'
+[0.480s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/descriptions) by extensions ['cmake', 'python']
+[0.480s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/descriptions) by extension 'cmake'
+[0.480s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/descriptions) by extension 'python'
+[0.480s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/descriptions) by extensions ['python_setup_py']
+[0.480s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/descriptions) by extension 'python_setup_py'
+[0.480s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/descriptions/unitree) by extensions ['ignore', 'ignore_ament_install']
+[0.480s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/descriptions/unitree) by extension 'ignore'
+[0.480s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/descriptions/unitree) by extension 'ignore_ament_install'
+[0.480s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/descriptions/unitree) by extensions ['colcon_pkg']
+[0.480s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/descriptions/unitree) by extension 'colcon_pkg'
+[0.480s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/descriptions/unitree) by extensions ['colcon_meta']
+[0.480s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/descriptions/unitree) by extension 'colcon_meta'
+[0.481s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/descriptions/unitree) by extensions ['ros']
+[0.481s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/descriptions/unitree) by extension 'ros'
+[0.481s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/descriptions/unitree) by extensions ['cmake', 'python']
+[0.481s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/descriptions/unitree) by extension 'cmake'
+[0.481s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/descriptions/unitree) by extension 'python'
+[0.481s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/descriptions/unitree) by extensions ['python_setup_py']
+[0.481s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/descriptions/unitree) by extension 'python_setup_py'
+[0.481s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/descriptions/unitree/a1_description) by extensions ['ignore', 'ignore_ament_install']
+[0.481s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/descriptions/unitree/a1_description) by extension 'ignore'
+[0.481s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/descriptions/unitree/a1_description) by extension 'ignore_ament_install'
+[0.481s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/descriptions/unitree/a1_description) by extensions ['colcon_pkg']
+[0.482s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/descriptions/unitree/a1_description) by extension 'colcon_pkg'
+[0.482s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/descriptions/unitree/a1_description) by extensions ['colcon_meta']
+[0.482s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/descriptions/unitree/a1_description) by extension 'colcon_meta'
+[0.482s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/descriptions/unitree/a1_description) by extensions ['ros']
+[0.482s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/descriptions/unitree/a1_description) by extension 'ros'
+[0.483s] DEBUG:colcon.colcon_core.package_identification:Package 'quadruped_ros2_control/descriptions/unitree/a1_description' with type 'ros.ament_cmake' and name 'a1_description'
+[0.483s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/descriptions/unitree/aliengo_description) by extensions ['ignore', 'ignore_ament_install']
+[0.483s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/descriptions/unitree/aliengo_description) by extension 'ignore'
+[0.483s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/descriptions/unitree/aliengo_description) by extension 'ignore_ament_install'
+[0.483s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/descriptions/unitree/aliengo_description) by extensions ['colcon_pkg']
+[0.483s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/descriptions/unitree/aliengo_description) by extension 'colcon_pkg'
+[0.483s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/descriptions/unitree/aliengo_description) by extensions ['colcon_meta']
+[0.483s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/descriptions/unitree/aliengo_description) by extension 'colcon_meta'
+[0.483s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/descriptions/unitree/aliengo_description) by extensions ['ros']
+[0.483s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/descriptions/unitree/aliengo_description) by extension 'ros'
+[0.484s] DEBUG:colcon.colcon_core.package_identification:Package 'quadruped_ros2_control/descriptions/unitree/aliengo_description' with type 'ros.ament_cmake' and name 'aliengo_description'
+[0.484s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/descriptions/unitree/b2_description) by extensions ['ignore', 'ignore_ament_install']
+[0.484s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/descriptions/unitree/b2_description) by extension 'ignore'
+[0.484s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/descriptions/unitree/b2_description) by extension 'ignore_ament_install'
+[0.485s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/descriptions/unitree/b2_description) by extensions ['colcon_pkg']
+[0.485s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/descriptions/unitree/b2_description) by extension 'colcon_pkg'
+[0.485s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/descriptions/unitree/b2_description) by extensions ['colcon_meta']
+[0.485s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/descriptions/unitree/b2_description) by extension 'colcon_meta'
+[0.485s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/descriptions/unitree/b2_description) by extensions ['ros']
+[0.485s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/descriptions/unitree/b2_description) by extension 'ros'
+[0.486s] DEBUG:colcon.colcon_core.package_identification:Package 'quadruped_ros2_control/descriptions/unitree/b2_description' with type 'ros.ament_cmake' and name 'b2_description'
+[0.486s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/descriptions/unitree/go1_description) by extensions ['ignore', 'ignore_ament_install']
+[0.486s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/descriptions/unitree/go1_description) by extension 'ignore'
+[0.486s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/descriptions/unitree/go1_description) by extension 'ignore_ament_install'
+[0.486s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/descriptions/unitree/go1_description) by extensions ['colcon_pkg']
+[0.486s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/descriptions/unitree/go1_description) by extension 'colcon_pkg'
+[0.486s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/descriptions/unitree/go1_description) by extensions ['colcon_meta']
+[0.486s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/descriptions/unitree/go1_description) by extension 'colcon_meta'
+[0.486s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/descriptions/unitree/go1_description) by extensions ['ros']
+[0.486s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/descriptions/unitree/go1_description) by extension 'ros'
+[0.487s] DEBUG:colcon.colcon_core.package_identification:Package 'quadruped_ros2_control/descriptions/unitree/go1_description' with type 'ros.ament_cmake' and name 'go1_description'
+[0.487s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/descriptions/unitree/go2_description) by extensions ['ignore', 'ignore_ament_install']
+[0.488s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/descriptions/unitree/go2_description) by extension 'ignore'
+[0.488s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/descriptions/unitree/go2_description) by extension 'ignore_ament_install'
+[0.488s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/descriptions/unitree/go2_description) by extensions ['colcon_pkg']
+[0.488s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/descriptions/unitree/go2_description) by extension 'colcon_pkg'
+[0.488s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/descriptions/unitree/go2_description) by extensions ['colcon_meta']
+[0.488s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/descriptions/unitree/go2_description) by extension 'colcon_meta'
+[0.488s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/descriptions/unitree/go2_description) by extensions ['ros']
+[0.488s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/descriptions/unitree/go2_description) by extension 'ros'
+[0.489s] DEBUG:colcon.colcon_core.package_identification:Package 'quadruped_ros2_control/descriptions/unitree/go2_description' with type 'ros.ament_cmake' and name 'go2_description'
+[0.489s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/hardwares) by extensions ['ignore', 'ignore_ament_install']
+[0.489s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/hardwares) by extension 'ignore'
+[0.489s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/hardwares) by extension 'ignore_ament_install'
+[0.489s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/hardwares) by extensions ['colcon_pkg']
+[0.489s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/hardwares) by extension 'colcon_pkg'
+[0.490s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/hardwares) by extensions ['colcon_meta']
+[0.490s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/hardwares) by extension 'colcon_meta'
+[0.490s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/hardwares) by extensions ['ros']
+[0.490s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/hardwares) by extension 'ros'
+[0.490s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/hardwares) by extensions ['cmake', 'python']
+[0.490s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/hardwares) by extension 'cmake'
+[0.490s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/hardwares) by extension 'python'
+[0.490s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/hardwares) by extensions ['python_setup_py']
+[0.490s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/hardwares) by extension 'python_setup_py'
+[0.490s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/hardwares/gz_quadruped_hardware) by extensions ['ignore', 'ignore_ament_install']
+[0.490s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/hardwares/gz_quadruped_hardware) by extension 'ignore'
+[0.490s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/hardwares/gz_quadruped_hardware) by extension 'ignore_ament_install'
+[0.491s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/hardwares/gz_quadruped_hardware) by extensions ['colcon_pkg']
+[0.491s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/hardwares/gz_quadruped_hardware) by extension 'colcon_pkg'
+[0.491s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/hardwares/gz_quadruped_hardware) by extensions ['colcon_meta']
+[0.491s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/hardwares/gz_quadruped_hardware) by extension 'colcon_meta'
+[0.491s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/hardwares/gz_quadruped_hardware) by extensions ['ros']
+[0.491s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/hardwares/gz_quadruped_hardware) by extension 'ros'
+[0.493s] DEBUG:colcon.colcon_core.package_identification:Package 'quadruped_ros2_control/hardwares/gz_quadruped_hardware' with type 'ros.ament_cmake' and name 'gz_quadruped_hardware'
+[0.493s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/hardwares/hardware_unitree_mujoco) by extensions ['ignore', 'ignore_ament_install']
+[0.493s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/hardwares/hardware_unitree_mujoco) by extension 'ignore'
+[0.493s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/hardwares/hardware_unitree_mujoco) by extension 'ignore_ament_install'
+[0.493s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/hardwares/hardware_unitree_mujoco) by extensions ['colcon_pkg']
+[0.493s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/hardwares/hardware_unitree_mujoco) by extension 'colcon_pkg'
+[0.494s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/hardwares/hardware_unitree_mujoco) by extensions ['colcon_meta']
+[0.494s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/hardwares/hardware_unitree_mujoco) by extension 'colcon_meta'
+[0.494s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/hardwares/hardware_unitree_mujoco) by extensions ['ros']
+[0.494s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/hardwares/hardware_unitree_mujoco) by extension 'ros'
+[0.494s] DEBUG:colcon.colcon_core.package_identification:Package 'quadruped_ros2_control/hardwares/hardware_unitree_mujoco' with type 'ros.ament_cmake' and name 'hardware_unitree_mujoco'
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/libraries) by extensions ['ignore', 'ignore_ament_install']
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/libraries) by extension 'ignore'
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/libraries) by extension 'ignore_ament_install'
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/libraries) by extensions ['colcon_pkg']
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/libraries) by extension 'colcon_pkg'
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/libraries) by extensions ['colcon_meta']
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/libraries) by extension 'colcon_meta'
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/libraries) by extensions ['ros']
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/libraries) by extension 'ros'
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/libraries) by extensions ['cmake', 'python']
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/libraries) by extension 'cmake'
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/libraries) by extension 'python'
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/libraries) by extensions ['python_setup_py']
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/libraries) by extension 'python_setup_py'
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/libraries/controller_common) by extensions ['ignore', 'ignore_ament_install']
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/libraries/controller_common) by extension 'ignore'
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/libraries/controller_common) by extension 'ignore_ament_install'
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/libraries/controller_common) by extensions ['colcon_pkg']
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/libraries/controller_common) by extension 'colcon_pkg'
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/libraries/controller_common) by extensions ['colcon_meta']
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/libraries/controller_common) by extension 'colcon_meta'
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/libraries/controller_common) by extensions ['ros']
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/libraries/controller_common) by extension 'ros'
+[0.497s] DEBUG:colcon.colcon_core.package_identification:Package 'quadruped_ros2_control/libraries/controller_common' with type 'ros.ament_cmake' and name 'controller_common'
+[0.498s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/libraries/gz_quadruped_playground) by extensions ['ignore', 'ignore_ament_install']
+[0.498s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/libraries/gz_quadruped_playground) by extension 'ignore'
+[0.498s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/libraries/gz_quadruped_playground) by extension 'ignore_ament_install'
+[0.498s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/libraries/gz_quadruped_playground) by extensions ['colcon_pkg']
+[0.498s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/libraries/gz_quadruped_playground) by extension 'colcon_pkg'
+[0.498s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/libraries/gz_quadruped_playground) by extensions ['colcon_meta']
+[0.498s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/libraries/gz_quadruped_playground) by extension 'colcon_meta'
+[0.498s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/libraries/gz_quadruped_playground) by extensions ['ros']
+[0.498s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/libraries/gz_quadruped_playground) by extension 'ros'
+[0.499s] DEBUG:colcon.colcon_core.package_identification:Package 'quadruped_ros2_control/libraries/gz_quadruped_playground' with type 'ros.ament_cmake' and name 'gz_quadruped_playground'
+[0.499s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/libraries/qpoases_colcon) by extensions ['ignore', 'ignore_ament_install']
+[0.499s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/libraries/qpoases_colcon) by extension 'ignore'
+[0.499s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/libraries/qpoases_colcon) by extension 'ignore_ament_install'
+[0.499s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/libraries/qpoases_colcon) by extensions ['colcon_pkg']
+[0.499s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/libraries/qpoases_colcon) by extension 'colcon_pkg'
+[0.500s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/libraries/qpoases_colcon) by extensions ['colcon_meta']
+[0.500s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/libraries/qpoases_colcon) by extension 'colcon_meta'
+[0.500s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/libraries/qpoases_colcon) by extensions ['ros']
+[0.500s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_ros2_control/libraries/qpoases_colcon) by extension 'ros'
+[0.500s] DEBUG:colcon.colcon_core.package_identification:Package 'quadruped_ros2_control/libraries/qpoases_colcon' with type 'ros.ament_cmake' and name 'qpoases_colcon'
+[0.500s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.501s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.501s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.501s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.501s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.536s] INFO:colcon.colcon_core.package_selection:Skipping package 'rl_quadruped_controller' in 'quadruped_ros2_control/controllers/rl_quadruped_controller'
+[0.536s] INFO:colcon.colcon_core.package_selection:Skipping package 'ocs2_quadruped_controller' in 'quadruped_ros2_control/controllers/ocs2_quadruped_controller'
+[0.536s] INFO:colcon.colcon_core.package_selection:Skipping package 'keyboard_input' in 'quadruped_ros2_control/commands/keyboard_input'
+[0.536s] INFO:colcon.colcon_core.package_selection:Skipping package 'joystick_input' in 'quadruped_ros2_control/commands/joystick_input'
+[0.536s] INFO:colcon.colcon_core.package_selection:Skipping package 'gz_quadruped_playground' in 'quadruped_ros2_control/libraries/gz_quadruped_playground'
+[0.536s] INFO:colcon.colcon_core.package_selection:Skipping package 'qpoases_colcon' in 'quadruped_ros2_control/libraries/qpoases_colcon'
+[0.536s] INFO:colcon.colcon_core.package_selection:Skipping package 'leg_pd_controller' in 'quadruped_ros2_control/controllers/leg_pd_controller'
+[0.536s] INFO:colcon.colcon_core.package_selection:Skipping package 'hardware_unitree_mujoco' in 'quadruped_ros2_control/hardwares/hardware_unitree_mujoco'
+[0.536s] INFO:colcon.colcon_core.package_selection:Skipping package 'gz_quadruped_hardware' in 'quadruped_ros2_control/hardwares/gz_quadruped_hardware'
+[0.536s] INFO:colcon.colcon_core.package_selection:Skipping package 'go2_description' in 'quadruped_ros2_control/descriptions/unitree/go2_description'
+[0.536s] INFO:colcon.colcon_core.package_selection:Skipping package 'go1_description' in 'quadruped_ros2_control/descriptions/unitree/go1_description'
+[0.536s] INFO:colcon.colcon_core.package_selection:Skipping package 'b2_description' in 'quadruped_ros2_control/descriptions/unitree/b2_description'
+[0.536s] INFO:colcon.colcon_core.package_selection:Skipping package 'aliengo_description' in 'quadruped_ros2_control/descriptions/unitree/aliengo_description'
+[0.537s] INFO:colcon.colcon_core.package_selection:Skipping package 'a1_description' in 'quadruped_ros2_control/descriptions/unitree/a1_description'
+[0.537s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.537s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.541s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 295 installed packages in /opt/ros/foxy
+[0.545s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.640s] Level 5:colcon.colcon_core.verb:set package 'control_input_msgs' build argument 'cmake_args' from command line to 'None'
+[0.640s] Level 5:colcon.colcon_core.verb:set package 'control_input_msgs' build argument 'cmake_target' from command line to 'None'
+[0.640s] Level 5:colcon.colcon_core.verb:set package 'control_input_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.640s] Level 5:colcon.colcon_core.verb:set package 'control_input_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.640s] Level 5:colcon.colcon_core.verb:set package 'control_input_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.640s] Level 5:colcon.colcon_core.verb:set package 'control_input_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.640s] Level 5:colcon.colcon_core.verb:set package 'control_input_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.640s] Level 5:colcon.colcon_core.verb:set package 'control_input_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.640s] Level 5:colcon.colcon_core.verb:set package 'control_input_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.640s] DEBUG:colcon.colcon_core.verb:Building package 'control_input_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/danya/a1_ros2_foxy_sim/src/build/control_input_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs', 'merge_install': False, 'path': '/home/danya/a1_ros2_foxy_sim/src/quadruped_ros2_control/commands/control_input_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.641s] Level 5:colcon.colcon_core.verb:set package 'controller_common' build argument 'cmake_args' from command line to 'None'
+[0.641s] Level 5:colcon.colcon_core.verb:set package 'controller_common' build argument 'cmake_target' from command line to 'None'
+[0.641s] Level 5:colcon.colcon_core.verb:set package 'controller_common' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.641s] Level 5:colcon.colcon_core.verb:set package 'controller_common' build argument 'cmake_clean_cache' from command line to 'False'
+[0.641s] Level 5:colcon.colcon_core.verb:set package 'controller_common' build argument 'cmake_clean_first' from command line to 'False'
+[0.641s] Level 5:colcon.colcon_core.verb:set package 'controller_common' build argument 'cmake_force_configure' from command line to 'False'
+[0.641s] Level 5:colcon.colcon_core.verb:set package 'controller_common' build argument 'ament_cmake_args' from command line to 'None'
+[0.641s] Level 5:colcon.colcon_core.verb:set package 'controller_common' build argument 'catkin_cmake_args' from command line to 'None'
+[0.641s] Level 5:colcon.colcon_core.verb:set package 'controller_common' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.641s] DEBUG:colcon.colcon_core.verb:Building package 'controller_common' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/danya/a1_ros2_foxy_sim/src/build/controller_common', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/danya/a1_ros2_foxy_sim/src/install/controller_common', 'merge_install': False, 'path': '/home/danya/a1_ros2_foxy_sim/src/quadruped_ros2_control/libraries/controller_common', 'symlink_install': False, 'test_result_base': None}
+[0.642s] Level 5:colcon.colcon_core.verb:set package 'unitree_guide_controller' build argument 'cmake_args' from command line to 'None'
+[0.642s] Level 5:colcon.colcon_core.verb:set package 'unitree_guide_controller' build argument 'cmake_target' from command line to 'None'
+[0.642s] Level 5:colcon.colcon_core.verb:set package 'unitree_guide_controller' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.642s] Level 5:colcon.colcon_core.verb:set package 'unitree_guide_controller' build argument 'cmake_clean_cache' from command line to 'False'
+[0.642s] Level 5:colcon.colcon_core.verb:set package 'unitree_guide_controller' build argument 'cmake_clean_first' from command line to 'False'
+[0.642s] Level 5:colcon.colcon_core.verb:set package 'unitree_guide_controller' build argument 'cmake_force_configure' from command line to 'False'
+[0.642s] Level 5:colcon.colcon_core.verb:set package 'unitree_guide_controller' build argument 'ament_cmake_args' from command line to 'None'
+[0.642s] Level 5:colcon.colcon_core.verb:set package 'unitree_guide_controller' build argument 'catkin_cmake_args' from command line to 'None'
+[0.642s] Level 5:colcon.colcon_core.verb:set package 'unitree_guide_controller' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.642s] DEBUG:colcon.colcon_core.verb:Building package 'unitree_guide_controller' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/danya/a1_ros2_foxy_sim/src/build/unitree_guide_controller', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/danya/a1_ros2_foxy_sim/src/install/unitree_guide_controller', 'merge_install': False, 'path': '/home/danya/a1_ros2_foxy_sim/src/quadruped_ros2_control/controllers/unitree_guide_controller', 'symlink_install': False, 'test_result_base': None}
+[0.642s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.644s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.644s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/danya/a1_ros2_foxy_sim/src/quadruped_ros2_control/commands/control_input_msgs' with build type 'ament_cmake'
+[0.644s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/danya/a1_ros2_foxy_sim/src/quadruped_ros2_control/commands/control_input_msgs'
+[0.649s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.649s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.649s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.684s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/danya/a1_ros2_foxy_sim/src/build/control_input_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/danya/a1_ros2_foxy_sim/src/quadruped_ros2_control/commands/control_input_msgs -DCMAKE_INSTALL_PREFIX=/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs
+[3.739s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/danya/a1_ros2_foxy_sim/src/build/control_input_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/danya/a1_ros2_foxy_sim/src/quadruped_ros2_control/commands/control_input_msgs -DCMAKE_INSTALL_PREFIX=/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs
+[3.749s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/danya/a1_ros2_foxy_sim/src/build/control_input_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/danya/a1_ros2_foxy_sim/src/build/control_input_msgs -- -j8 -l8
+[8.525s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/danya/a1_ros2_foxy_sim/src/build/control_input_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/danya/a1_ros2_foxy_sim/src/build/control_input_msgs -- -j8 -l8
+[8.559s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/danya/a1_ros2_foxy_sim/src/build/control_input_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/danya/a1_ros2_foxy_sim/src/build/control_input_msgs
+[8.696s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(control_input_msgs)
+[8.698s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/danya/a1_ros2_foxy_sim/src/build/control_input_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/danya/a1_ros2_foxy_sim/src/build/control_input_msgs
+[8.705s] Level 1:colcon.colcon_core.environment:checking '/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs' for CMake module files
+[8.707s] Level 1:colcon.colcon_core.environment:checking '/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs' for CMake config files
+[8.708s] Level 1:colcon.colcon_core.shell:create_environment_hook('control_input_msgs', 'cmake_prefix_path')
+[8.708s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/share/control_input_msgs/hook/cmake_prefix_path.ps1'
+[8.709s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/share/control_input_msgs/hook/cmake_prefix_path.dsv'
+[8.710s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/share/control_input_msgs/hook/cmake_prefix_path.sh'
+[8.711s] Level 1:colcon.colcon_core.environment:checking '/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/lib'
+[8.712s] Level 1:colcon.colcon_core.shell:create_environment_hook('control_input_msgs', 'ld_library_path_lib')
+[8.712s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/share/control_input_msgs/hook/ld_library_path_lib.ps1'
+[8.713s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/share/control_input_msgs/hook/ld_library_path_lib.dsv'
+[8.713s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/share/control_input_msgs/hook/ld_library_path_lib.sh'
+[8.714s] Level 1:colcon.colcon_core.environment:checking '/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/bin'
+[8.714s] Level 1:colcon.colcon_core.environment:checking '/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/lib/pkgconfig/control_input_msgs.pc'
+[8.715s] Level 1:colcon.colcon_core.environment:checking '/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/lib/python3.8/site-packages'
+[8.715s] Level 1:colcon.colcon_core.shell:create_environment_hook('control_input_msgs', 'pythonpath')
+[8.715s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/share/control_input_msgs/hook/pythonpath.ps1'
+[8.716s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/share/control_input_msgs/hook/pythonpath.dsv'
+[8.717s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/share/control_input_msgs/hook/pythonpath.sh'
+[8.718s] Level 1:colcon.colcon_core.environment:checking '/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/bin'
+[8.718s] INFO:colcon.colcon_core.shell:Creating package script '/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/share/control_input_msgs/package.ps1'
+[8.720s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/share/control_input_msgs/package.dsv'
+[8.721s] INFO:colcon.colcon_core.shell:Creating package script '/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/share/control_input_msgs/package.sh'
+[8.722s] INFO:colcon.colcon_core.shell:Creating package script '/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/share/control_input_msgs/package.bash'
+[8.723s] INFO:colcon.colcon_core.shell:Creating package script '/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/share/control_input_msgs/package.zsh'
+[8.724s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/share/colcon-core/packages/control_input_msgs)
+[8.725s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(control_input_msgs)
+[8.726s] Level 1:colcon.colcon_core.environment:checking '/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs' for CMake module files
+[8.727s] Level 1:colcon.colcon_core.environment:checking '/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs' for CMake config files
+[8.727s] Level 1:colcon.colcon_core.shell:create_environment_hook('control_input_msgs', 'cmake_prefix_path')
+[8.728s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/share/control_input_msgs/hook/cmake_prefix_path.ps1'
+[8.728s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/share/control_input_msgs/hook/cmake_prefix_path.dsv'
+[8.729s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/share/control_input_msgs/hook/cmake_prefix_path.sh'
+[8.730s] Level 1:colcon.colcon_core.environment:checking '/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/lib'
+[8.730s] Level 1:colcon.colcon_core.shell:create_environment_hook('control_input_msgs', 'ld_library_path_lib')
+[8.730s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/share/control_input_msgs/hook/ld_library_path_lib.ps1'
+[8.731s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/share/control_input_msgs/hook/ld_library_path_lib.dsv'
+[8.755s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/share/control_input_msgs/hook/ld_library_path_lib.sh'
+[8.756s] Level 1:colcon.colcon_core.environment:checking '/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/bin'
+[8.756s] Level 1:colcon.colcon_core.environment:checking '/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/lib/pkgconfig/control_input_msgs.pc'
+[8.756s] Level 1:colcon.colcon_core.environment:checking '/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/lib/python3.8/site-packages'
+[8.756s] Level 1:colcon.colcon_core.shell:create_environment_hook('control_input_msgs', 'pythonpath')
+[8.757s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/share/control_input_msgs/hook/pythonpath.ps1'
+[8.757s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/share/control_input_msgs/hook/pythonpath.dsv'
+[8.758s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/share/control_input_msgs/hook/pythonpath.sh'
+[8.759s] Level 1:colcon.colcon_core.environment:checking '/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/bin'
+[8.759s] INFO:colcon.colcon_core.shell:Creating package script '/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/share/control_input_msgs/package.ps1'
+[8.760s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/share/control_input_msgs/package.dsv'
+[8.761s] INFO:colcon.colcon_core.shell:Creating package script '/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/share/control_input_msgs/package.sh'
+[8.762s] INFO:colcon.colcon_core.shell:Creating package script '/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/share/control_input_msgs/package.bash'
+[8.762s] INFO:colcon.colcon_core.shell:Creating package script '/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/share/control_input_msgs/package.zsh'
+[8.763s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/share/colcon-core/packages/control_input_msgs)
+[8.764s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/danya/a1_ros2_foxy_sim/src/quadruped_ros2_control/libraries/controller_common' with build type 'ament_cmake'
+[8.764s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/danya/a1_ros2_foxy_sim/src/quadruped_ros2_control/libraries/controller_common'
+[8.764s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[8.764s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[8.796s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/danya/a1_ros2_foxy_sim/src/build/controller_common': AMENT_PREFIX_PATH=/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/danya/a1_ros2_foxy_sim/src/quadruped_ros2_control/libraries/controller_common -DCMAKE_INSTALL_PREFIX=/home/danya/a1_ros2_foxy_sim/src/install/controller_common
+[12.956s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/danya/a1_ros2_foxy_sim/src/build/controller_common' returned '0': AMENT_PREFIX_PATH=/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/danya/a1_ros2_foxy_sim/src/quadruped_ros2_control/libraries/controller_common -DCMAKE_INSTALL_PREFIX=/home/danya/a1_ros2_foxy_sim/src/install/controller_common
+[12.962s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/danya/a1_ros2_foxy_sim/src/build/controller_common': AMENT_PREFIX_PATH=/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/danya/a1_ros2_foxy_sim/src/build/controller_common -- -j8 -l8
+[14.403s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/danya/a1_ros2_foxy_sim/src/build/controller_common' returned '0': AMENT_PREFIX_PATH=/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/danya/a1_ros2_foxy_sim/src/build/controller_common -- -j8 -l8
+[14.411s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/danya/a1_ros2_foxy_sim/src/build/controller_common': AMENT_PREFIX_PATH=/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/danya/a1_ros2_foxy_sim/src/build/controller_common
+[14.445s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(controller_common)
+[14.446s] Level 1:colcon.colcon_core.environment:checking '/home/danya/a1_ros2_foxy_sim/src/install/controller_common' for CMake module files
+[14.447s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/danya/a1_ros2_foxy_sim/src/build/controller_common' returned '0': AMENT_PREFIX_PATH=/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/danya/a1_ros2_foxy_sim/src/build/controller_common
+[14.448s] Level 1:colcon.colcon_core.environment:checking '/home/danya/a1_ros2_foxy_sim/src/install/controller_common' for CMake config files
+[14.449s] Level 1:colcon.colcon_core.shell:create_environment_hook('controller_common', 'cmake_prefix_path')
+[14.449s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/danya/a1_ros2_foxy_sim/src/install/controller_common/share/controller_common/hook/cmake_prefix_path.ps1'
+[14.450s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/danya/a1_ros2_foxy_sim/src/install/controller_common/share/controller_common/hook/cmake_prefix_path.dsv'
+[14.451s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/danya/a1_ros2_foxy_sim/src/install/controller_common/share/controller_common/hook/cmake_prefix_path.sh'
+[14.452s] Level 1:colcon.colcon_core.environment:checking '/home/danya/a1_ros2_foxy_sim/src/install/controller_common/lib'
+[14.453s] Level 1:colcon.colcon_core.shell:create_environment_hook('controller_common', 'ld_library_path_lib')
+[14.453s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/danya/a1_ros2_foxy_sim/src/install/controller_common/share/controller_common/hook/ld_library_path_lib.ps1'
+[14.454s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/danya/a1_ros2_foxy_sim/src/install/controller_common/share/controller_common/hook/ld_library_path_lib.dsv'
+[14.454s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/danya/a1_ros2_foxy_sim/src/install/controller_common/share/controller_common/hook/ld_library_path_lib.sh'
+[14.455s] Level 1:colcon.colcon_core.environment:checking '/home/danya/a1_ros2_foxy_sim/src/install/controller_common/bin'
+[14.455s] Level 1:colcon.colcon_core.environment:checking '/home/danya/a1_ros2_foxy_sim/src/install/controller_common/lib/pkgconfig/controller_common.pc'
+[14.456s] Level 1:colcon.colcon_core.environment:checking '/home/danya/a1_ros2_foxy_sim/src/install/controller_common/lib/python3.8/site-packages'
+[14.456s] Level 1:colcon.colcon_core.environment:checking '/home/danya/a1_ros2_foxy_sim/src/install/controller_common/bin'
+[14.457s] INFO:colcon.colcon_core.shell:Creating package script '/home/danya/a1_ros2_foxy_sim/src/install/controller_common/share/controller_common/package.ps1'
+[14.458s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/danya/a1_ros2_foxy_sim/src/install/controller_common/share/controller_common/package.dsv'
+[14.459s] INFO:colcon.colcon_core.shell:Creating package script '/home/danya/a1_ros2_foxy_sim/src/install/controller_common/share/controller_common/package.sh'
+[14.459s] INFO:colcon.colcon_core.shell:Creating package script '/home/danya/a1_ros2_foxy_sim/src/install/controller_common/share/controller_common/package.bash'
+[14.460s] INFO:colcon.colcon_core.shell:Creating package script '/home/danya/a1_ros2_foxy_sim/src/install/controller_common/share/controller_common/package.zsh'
+[14.460s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/danya/a1_ros2_foxy_sim/src/install/controller_common/share/colcon-core/packages/controller_common)
+[14.461s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(controller_common)
+[14.462s] Level 1:colcon.colcon_core.environment:checking '/home/danya/a1_ros2_foxy_sim/src/install/controller_common' for CMake module files
+[14.462s] Level 1:colcon.colcon_core.environment:checking '/home/danya/a1_ros2_foxy_sim/src/install/controller_common' for CMake config files
+[14.463s] Level 1:colcon.colcon_core.shell:create_environment_hook('controller_common', 'cmake_prefix_path')
+[14.463s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/danya/a1_ros2_foxy_sim/src/install/controller_common/share/controller_common/hook/cmake_prefix_path.ps1'
+[14.464s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/danya/a1_ros2_foxy_sim/src/install/controller_common/share/controller_common/hook/cmake_prefix_path.dsv'
+[14.464s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/danya/a1_ros2_foxy_sim/src/install/controller_common/share/controller_common/hook/cmake_prefix_path.sh'
+[14.465s] Level 1:colcon.colcon_core.environment:checking '/home/danya/a1_ros2_foxy_sim/src/install/controller_common/lib'
+[14.465s] Level 1:colcon.colcon_core.shell:create_environment_hook('controller_common', 'ld_library_path_lib')
+[14.466s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/danya/a1_ros2_foxy_sim/src/install/controller_common/share/controller_common/hook/ld_library_path_lib.ps1'
+[14.466s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/danya/a1_ros2_foxy_sim/src/install/controller_common/share/controller_common/hook/ld_library_path_lib.dsv'
+[14.467s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/danya/a1_ros2_foxy_sim/src/install/controller_common/share/controller_common/hook/ld_library_path_lib.sh'
+[14.467s] Level 1:colcon.colcon_core.environment:checking '/home/danya/a1_ros2_foxy_sim/src/install/controller_common/bin'
+[14.467s] Level 1:colcon.colcon_core.environment:checking '/home/danya/a1_ros2_foxy_sim/src/install/controller_common/lib/pkgconfig/controller_common.pc'
+[14.468s] Level 1:colcon.colcon_core.environment:checking '/home/danya/a1_ros2_foxy_sim/src/install/controller_common/lib/python3.8/site-packages'
+[14.468s] Level 1:colcon.colcon_core.environment:checking '/home/danya/a1_ros2_foxy_sim/src/install/controller_common/bin'
+[14.468s] INFO:colcon.colcon_core.shell:Creating package script '/home/danya/a1_ros2_foxy_sim/src/install/controller_common/share/controller_common/package.ps1'
+[14.469s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/danya/a1_ros2_foxy_sim/src/install/controller_common/share/controller_common/package.dsv'
+[14.470s] INFO:colcon.colcon_core.shell:Creating package script '/home/danya/a1_ros2_foxy_sim/src/install/controller_common/share/controller_common/package.sh'
+[14.471s] INFO:colcon.colcon_core.shell:Creating package script '/home/danya/a1_ros2_foxy_sim/src/install/controller_common/share/controller_common/package.bash'
+[14.472s] INFO:colcon.colcon_core.shell:Creating package script '/home/danya/a1_ros2_foxy_sim/src/install/controller_common/share/controller_common/package.zsh'
+[14.472s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/danya/a1_ros2_foxy_sim/src/install/controller_common/share/colcon-core/packages/controller_common)
+[14.473s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/danya/a1_ros2_foxy_sim/src/quadruped_ros2_control/controllers/unitree_guide_controller' with build type 'ament_cmake'
+[14.473s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/danya/a1_ros2_foxy_sim/src/quadruped_ros2_control/controllers/unitree_guide_controller'
+[14.473s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[14.473s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[14.511s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/danya/a1_ros2_foxy_sim/src/build/unitree_guide_controller': AMENT_PREFIX_PATH=/home/danya/a1_ros2_foxy_sim/src/install/controller_common:/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/danya/a1_ros2_foxy_sim/src/install/controller_common:/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/danya/a1_ros2_foxy_sim/src/install/controller_common/lib:/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/danya/a1_ros2_foxy_sim/src/quadruped_ros2_control/controllers/unitree_guide_controller -DCMAKE_INSTALL_PREFIX=/home/danya/a1_ros2_foxy_sim/src/install/unitree_guide_controller
+[19.322s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/danya/a1_ros2_foxy_sim/src/build/unitree_guide_controller' returned '0': AMENT_PREFIX_PATH=/home/danya/a1_ros2_foxy_sim/src/install/controller_common:/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/danya/a1_ros2_foxy_sim/src/install/controller_common:/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/danya/a1_ros2_foxy_sim/src/install/controller_common/lib:/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/danya/a1_ros2_foxy_sim/src/quadruped_ros2_control/controllers/unitree_guide_controller -DCMAKE_INSTALL_PREFIX=/home/danya/a1_ros2_foxy_sim/src/install/unitree_guide_controller
+[19.329s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/danya/a1_ros2_foxy_sim/src/build/unitree_guide_controller': AMENT_PREFIX_PATH=/home/danya/a1_ros2_foxy_sim/src/install/controller_common:/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/danya/a1_ros2_foxy_sim/src/install/controller_common:/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/danya/a1_ros2_foxy_sim/src/install/controller_common/lib:/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/danya/a1_ros2_foxy_sim/src/build/unitree_guide_controller -- -j8 -l8
+[56.519s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/danya/a1_ros2_foxy_sim/src/build/unitree_guide_controller' returned '0': AMENT_PREFIX_PATH=/home/danya/a1_ros2_foxy_sim/src/install/controller_common:/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/danya/a1_ros2_foxy_sim/src/install/controller_common:/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/danya/a1_ros2_foxy_sim/src/install/controller_common/lib:/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/danya/a1_ros2_foxy_sim/src/build/unitree_guide_controller -- -j8 -l8
+[56.527s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/danya/a1_ros2_foxy_sim/src/build/unitree_guide_controller': AMENT_PREFIX_PATH=/home/danya/a1_ros2_foxy_sim/src/install/controller_common:/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/danya/a1_ros2_foxy_sim/src/install/controller_common:/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/danya/a1_ros2_foxy_sim/src/install/controller_common/lib:/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/danya/a1_ros2_foxy_sim/src/build/unitree_guide_controller
+[56.573s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(unitree_guide_controller)
+[56.575s] Level 1:colcon.colcon_core.environment:checking '/home/danya/a1_ros2_foxy_sim/src/install/unitree_guide_controller' for CMake module files
+[56.576s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/danya/a1_ros2_foxy_sim/src/build/unitree_guide_controller' returned '0': AMENT_PREFIX_PATH=/home/danya/a1_ros2_foxy_sim/src/install/controller_common:/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/danya/a1_ros2_foxy_sim/src/install/controller_common:/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/danya/a1_ros2_foxy_sim/src/install/controller_common/lib:/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/danya/a1_ros2_foxy_sim/src/build/unitree_guide_controller
+[56.577s] Level 1:colcon.colcon_core.environment:checking '/home/danya/a1_ros2_foxy_sim/src/install/unitree_guide_controller' for CMake config files
+[56.578s] Level 1:colcon.colcon_core.shell:create_environment_hook('unitree_guide_controller', 'cmake_prefix_path')
+[56.579s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/danya/a1_ros2_foxy_sim/src/install/unitree_guide_controller/share/unitree_guide_controller/hook/cmake_prefix_path.ps1'
+[56.582s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/danya/a1_ros2_foxy_sim/src/install/unitree_guide_controller/share/unitree_guide_controller/hook/cmake_prefix_path.dsv'
+[56.583s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/danya/a1_ros2_foxy_sim/src/install/unitree_guide_controller/share/unitree_guide_controller/hook/cmake_prefix_path.sh'
+[56.585s] Level 1:colcon.colcon_core.environment:checking '/home/danya/a1_ros2_foxy_sim/src/install/unitree_guide_controller/lib'
+[56.585s] Level 1:colcon.colcon_core.environment:checking '/home/danya/a1_ros2_foxy_sim/src/install/unitree_guide_controller/bin'
+[56.585s] Level 1:colcon.colcon_core.environment:checking '/home/danya/a1_ros2_foxy_sim/src/install/unitree_guide_controller/lib/pkgconfig/unitree_guide_controller.pc'
+[56.585s] Level 1:colcon.colcon_core.environment:checking '/home/danya/a1_ros2_foxy_sim/src/install/unitree_guide_controller/lib/python3.8/site-packages'
+[56.586s] Level 1:colcon.colcon_core.environment:checking '/home/danya/a1_ros2_foxy_sim/src/install/unitree_guide_controller/bin'
+[56.587s] INFO:colcon.colcon_core.shell:Creating package script '/home/danya/a1_ros2_foxy_sim/src/install/unitree_guide_controller/share/unitree_guide_controller/package.ps1'
+[56.588s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/danya/a1_ros2_foxy_sim/src/install/unitree_guide_controller/share/unitree_guide_controller/package.dsv'
+[56.589s] INFO:colcon.colcon_core.shell:Creating package script '/home/danya/a1_ros2_foxy_sim/src/install/unitree_guide_controller/share/unitree_guide_controller/package.sh'
+[56.590s] INFO:colcon.colcon_core.shell:Creating package script '/home/danya/a1_ros2_foxy_sim/src/install/unitree_guide_controller/share/unitree_guide_controller/package.bash'
+[56.591s] INFO:colcon.colcon_core.shell:Creating package script '/home/danya/a1_ros2_foxy_sim/src/install/unitree_guide_controller/share/unitree_guide_controller/package.zsh'
+[56.592s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/danya/a1_ros2_foxy_sim/src/install/unitree_guide_controller/share/colcon-core/packages/unitree_guide_controller)
+[56.593s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(unitree_guide_controller)
+[56.593s] Level 1:colcon.colcon_core.environment:checking '/home/danya/a1_ros2_foxy_sim/src/install/unitree_guide_controller' for CMake module files
+[56.594s] Level 1:colcon.colcon_core.environment:checking '/home/danya/a1_ros2_foxy_sim/src/install/unitree_guide_controller' for CMake config files
+[56.595s] Level 1:colcon.colcon_core.shell:create_environment_hook('unitree_guide_controller', 'cmake_prefix_path')
+[56.595s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/danya/a1_ros2_foxy_sim/src/install/unitree_guide_controller/share/unitree_guide_controller/hook/cmake_prefix_path.ps1'
+[56.596s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/danya/a1_ros2_foxy_sim/src/install/unitree_guide_controller/share/unitree_guide_controller/hook/cmake_prefix_path.dsv'
+[56.596s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/danya/a1_ros2_foxy_sim/src/install/unitree_guide_controller/share/unitree_guide_controller/hook/cmake_prefix_path.sh'
+[56.597s] Level 1:colcon.colcon_core.environment:checking '/home/danya/a1_ros2_foxy_sim/src/install/unitree_guide_controller/lib'
+[56.597s] Level 1:colcon.colcon_core.environment:checking '/home/danya/a1_ros2_foxy_sim/src/install/unitree_guide_controller/bin'
+[56.597s] Level 1:colcon.colcon_core.environment:checking '/home/danya/a1_ros2_foxy_sim/src/install/unitree_guide_controller/lib/pkgconfig/unitree_guide_controller.pc'
+[56.597s] Level 1:colcon.colcon_core.environment:checking '/home/danya/a1_ros2_foxy_sim/src/install/unitree_guide_controller/lib/python3.8/site-packages'
+[56.598s] Level 1:colcon.colcon_core.environment:checking '/home/danya/a1_ros2_foxy_sim/src/install/unitree_guide_controller/bin'
+[56.598s] INFO:colcon.colcon_core.shell:Creating package script '/home/danya/a1_ros2_foxy_sim/src/install/unitree_guide_controller/share/unitree_guide_controller/package.ps1'
+[56.599s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/danya/a1_ros2_foxy_sim/src/install/unitree_guide_controller/share/unitree_guide_controller/package.dsv'
+[56.600s] INFO:colcon.colcon_core.shell:Creating package script '/home/danya/a1_ros2_foxy_sim/src/install/unitree_guide_controller/share/unitree_guide_controller/package.sh'
+[56.600s] INFO:colcon.colcon_core.shell:Creating package script '/home/danya/a1_ros2_foxy_sim/src/install/unitree_guide_controller/share/unitree_guide_controller/package.bash'
+[56.601s] INFO:colcon.colcon_core.shell:Creating package script '/home/danya/a1_ros2_foxy_sim/src/install/unitree_guide_controller/share/unitree_guide_controller/package.zsh'
+[56.601s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/danya/a1_ros2_foxy_sim/src/install/unitree_guide_controller/share/colcon-core/packages/unitree_guide_controller)
+[56.602s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[56.602s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[56.602s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[56.603s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[56.622s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[56.622s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[56.622s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[56.656s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[56.657s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/danya/a1_ros2_foxy_sim/src/install/local_setup.ps1'
+[56.661s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/danya/a1_ros2_foxy_sim/src/install/_local_setup_util_ps1.py'
+[56.666s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/danya/a1_ros2_foxy_sim/src/install/setup.ps1'
+[56.668s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/danya/a1_ros2_foxy_sim/src/install/local_setup.sh'
+[56.669s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/danya/a1_ros2_foxy_sim/src/install/_local_setup_util_sh.py'
+[56.670s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/danya/a1_ros2_foxy_sim/src/install/setup.sh'
+[56.672s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/danya/a1_ros2_foxy_sim/src/install/local_setup.bash'
+[56.673s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/danya/a1_ros2_foxy_sim/src/install/setup.bash'
+[56.675s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/danya/a1_ros2_foxy_sim/src/install/local_setup.zsh'
+[56.676s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/danya/a1_ros2_foxy_sim/src/install/setup.zsh'

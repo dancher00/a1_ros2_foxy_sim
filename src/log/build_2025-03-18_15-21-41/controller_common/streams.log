@@ -1,0 +1,86 @@
+[0.030s] Invoking command in '/home/danya/a1_ros2_foxy_sim/src/build/controller_common': AMENT_PREFIX_PATH=/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/danya/a1_ros2_foxy_sim/src/quadruped_ros2_control/libraries/controller_common -DCMAKE_INSTALL_PREFIX=/home/danya/a1_ros2_foxy_sim/src/install/controller_common
+[0.160s] -- The C compiler identification is GNU 9.4.0
+[0.275s] -- The CXX compiler identification is GNU 9.4.0
+[0.285s] -- Check for working C compiler: /usr/bin/cc
+[0.443s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.445s] -- Detecting C compiler ABI info
+[0.597s] -- Detecting C compiler ABI info - done
+[0.617s] -- Detecting C compile features
+[0.617s] -- Detecting C compile features - done
+[0.621s] -- Check for working CXX compiler: /usr/bin/c++
+[0.795s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.798s] -- Detecting CXX compiler ABI info
+[0.984s] -- Detecting CXX compiler ABI info - done
+[1.005s] -- Detecting CXX compile features
+[1.006s] -- Detecting CXX compile features - done
+[1.011s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[1.060s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[1.060s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.463s] -- Found hardware_interface: 0.11.0 (/opt/ros/foxy/share/hardware_interface/cmake)
+[1.532s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.544s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[1.764s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[1.826s] -- Found FastRTPS: /opt/ros/foxy/include  
+[1.984s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.899s] -- Found control_input_msgs: 0.0.0 (/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/share/control_input_msgs/cmake)
+[2.915s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[3.004s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[3.010s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.013s] -- Looking for pthread.h
+[3.175s] -- Looking for pthread.h - found
+[3.176s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[3.358s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[3.359s] -- Looking for pthread_create in pthreads
+[3.515s] -- Looking for pthread_create in pthreads - not found
+[3.515s] -- Looking for pthread_create in pthread
+[3.682s] -- Looking for pthread_create in pthread - found
+[3.685s] -- Found Threads: TRUE  
+[4.090s] -- Configuring done
+[4.160s] -- Generating done
+[4.174s] -- Build files have been written to: /home/danya/a1_ros2_foxy_sim/src/build/controller_common
+[4.189s] Invoked command in '/home/danya/a1_ros2_foxy_sim/src/build/controller_common' returned '0': AMENT_PREFIX_PATH=/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/danya/a1_ros2_foxy_sim/src/quadruped_ros2_control/libraries/controller_common -DCMAKE_INSTALL_PREFIX=/home/danya/a1_ros2_foxy_sim/src/install/controller_common
+[4.196s] Invoking command in '/home/danya/a1_ros2_foxy_sim/src/build/controller_common': AMENT_PREFIX_PATH=/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/danya/a1_ros2_foxy_sim/src/build/controller_common -- -j8 -l8
+[4.296s] [35m[1mScanning dependencies of target controller_common[0m
+[4.363s] [ 25%] [32mBuilding CXX object CMakeFiles/controller_common.dir/src/FSM/StatePassive.cpp.o[0m
+[4.364s] [ 75%] [32mBuilding CXX object CMakeFiles/controller_common.dir/src/FSM/StateFixedDown.cpp.o[0m
+[4.365s] [ 75%] [32mBuilding CXX object CMakeFiles/controller_common.dir/src/FSM/BaseFixedStand.cpp.o[0m
+[5.317s] [100%] [32m[1mLinking CXX shared library libcontroller_common.so[0m
+[5.606s] [100%] Built target controller_common
+[5.637s] Invoked command in '/home/danya/a1_ros2_foxy_sim/src/build/controller_common' returned '0': AMENT_PREFIX_PATH=/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/danya/a1_ros2_foxy_sim/src/build/controller_common -- -j8 -l8
+[5.644s] Invoking command in '/home/danya/a1_ros2_foxy_sim/src/build/controller_common': AMENT_PREFIX_PATH=/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/danya/a1_ros2_foxy_sim/src/build/controller_common
+[5.666s] -- Install configuration: "Release"
+[5.666s] -- Installing: /home/danya/a1_ros2_foxy_sim/src/install/controller_common/include/controller_common
+[5.666s] -- Installing: /home/danya/a1_ros2_foxy_sim/src/install/controller_common/include/controller_common/controller_common
+[5.667s] -- Installing: /home/danya/a1_ros2_foxy_sim/src/install/controller_common/include/controller_common/controller_common/common
+[5.667s] -- Installing: /home/danya/a1_ros2_foxy_sim/src/install/controller_common/include/controller_common/controller_common/common/enumClass.h
+[5.667s] -- Installing: /home/danya/a1_ros2_foxy_sim/src/install/controller_common/include/controller_common/controller_common/common/mathTools.h
+[5.667s] -- Installing: /home/danya/a1_ros2_foxy_sim/src/install/controller_common/include/controller_common/controller_common/common/mathTypes.h
+[5.667s] -- Installing: /home/danya/a1_ros2_foxy_sim/src/install/controller_common/include/controller_common/controller_common/FSM
+[5.668s] -- Installing: /home/danya/a1_ros2_foxy_sim/src/install/controller_common/include/controller_common/controller_common/FSM/StateFixedDown.h
+[5.668s] -- Installing: /home/danya/a1_ros2_foxy_sim/src/install/controller_common/include/controller_common/controller_common/FSM/BaseFixedStand.h
+[5.668s] -- Installing: /home/danya/a1_ros2_foxy_sim/src/install/controller_common/include/controller_common/controller_common/FSM/FSMState.h
+[5.668s] -- Installing: /home/danya/a1_ros2_foxy_sim/src/install/controller_common/include/controller_common/controller_common/FSM/StatePassive.h
+[5.669s] -- Installing: /home/danya/a1_ros2_foxy_sim/src/install/controller_common/include/controller_common/controller_common/CtrlInterfaces.h
+[5.669s] -- Installing: /home/danya/a1_ros2_foxy_sim/src/install/controller_common/lib/libcontroller_common.so
+[5.669s] -- Set runtime path of "/home/danya/a1_ros2_foxy_sim/src/install/controller_common/lib/libcontroller_common.so" to ""
+[5.670s] -- Installing: /home/danya/a1_ros2_foxy_sim/src/install/controller_common/share/controller_common/environment/library_path.sh
+[5.670s] -- Installing: /home/danya/a1_ros2_foxy_sim/src/install/controller_common/share/controller_common/environment/library_path.dsv
+[5.670s] -- Installing: /home/danya/a1_ros2_foxy_sim/src/install/controller_common/share/ament_index/resource_index/package_run_dependencies/controller_common
+[5.670s] -- Installing: /home/danya/a1_ros2_foxy_sim/src/install/controller_common/share/ament_index/resource_index/parent_prefix_path/controller_common
+[5.671s] -- Installing: /home/danya/a1_ros2_foxy_sim/src/install/controller_common/share/controller_common/environment/ament_prefix_path.sh
+[5.671s] -- Installing: /home/danya/a1_ros2_foxy_sim/src/install/controller_common/share/controller_common/environment/ament_prefix_path.dsv
+[5.671s] -- Installing: /home/danya/a1_ros2_foxy_sim/src/install/controller_common/share/controller_common/environment/path.sh
+[5.671s] -- Installing: /home/danya/a1_ros2_foxy_sim/src/install/controller_common/share/controller_common/environment/path.dsv
+[5.672s] -- Installing: /home/danya/a1_ros2_foxy_sim/src/install/controller_common/share/controller_common/local_setup.bash
+[5.672s] -- Installing: /home/danya/a1_ros2_foxy_sim/src/install/controller_common/share/controller_common/local_setup.sh
+[5.672s] -- Installing: /home/danya/a1_ros2_foxy_sim/src/install/controller_common/share/controller_common/local_setup.zsh
+[5.672s] -- Installing: /home/danya/a1_ros2_foxy_sim/src/install/controller_common/share/controller_common/local_setup.dsv
+[5.673s] -- Installing: /home/danya/a1_ros2_foxy_sim/src/install/controller_common/share/controller_common/package.dsv
+[5.673s] -- Installing: /home/danya/a1_ros2_foxy_sim/src/install/controller_common/share/ament_index/resource_index/packages/controller_common
+[5.673s] -- Installing: /home/danya/a1_ros2_foxy_sim/src/install/controller_common/share/controller_common/cmake/export_controller_commonExport.cmake
+[5.674s] -- Installing: /home/danya/a1_ros2_foxy_sim/src/install/controller_common/share/controller_common/cmake/export_controller_commonExport-release.cmake
+[5.674s] -- Installing: /home/danya/a1_ros2_foxy_sim/src/install/controller_common/share/controller_common/cmake/ament_cmake_export_targets-extras.cmake
+[5.674s] -- Installing: /home/danya/a1_ros2_foxy_sim/src/install/controller_common/share/controller_common/cmake/controller_commonConfig.cmake
+[5.674s] -- Installing: /home/danya/a1_ros2_foxy_sim/src/install/controller_common/share/controller_common/cmake/controller_commonConfig-version.cmake
+[5.675s] -- Installing: /home/danya/a1_ros2_foxy_sim/src/install/controller_common/share/controller_common/package.xml
+[5.680s] Invoked command in '/home/danya/a1_ros2_foxy_sim/src/build/controller_common' returned '0': AMENT_PREFIX_PATH=/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/danya/a1_ros2_foxy_sim/src/install/control_input_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/danya/a1_ros2_foxy_sim/src/build/controller_common

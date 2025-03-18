@@ -1,0 +1,10 @@
+/home/danya/a1_ros2_foxy_sim/src/build/unitree_guide_controller/CMakeFiles/install/strip.dir
+/home/danya/a1_ros2_foxy_sim/src/build/unitree_guide_controller/CMakeFiles/install.dir
+/home/danya/a1_ros2_foxy_sim/src/build/unitree_guide_controller/CMakeFiles/list_install_components.dir
+/home/danya/a1_ros2_foxy_sim/src/build/unitree_guide_controller/CMakeFiles/rebuild_cache.dir
+/home/danya/a1_ros2_foxy_sim/src/build/unitree_guide_controller/CMakeFiles/edit_cache.dir
+/home/danya/a1_ros2_foxy_sim/src/build/unitree_guide_controller/CMakeFiles/test.dir
+/home/danya/a1_ros2_foxy_sim/src/build/unitree_guide_controller/CMakeFiles/install/local.dir
+/home/danya/a1_ros2_foxy_sim/src/build/unitree_guide_controller/CMakeFiles/unitree_guide_controller.dir
+/home/danya/a1_ros2_foxy_sim/src/build/unitree_guide_controller/CMakeFiles/unitree_guide_controller_uninstall.dir
+/home/danya/a1_ros2_foxy_sim/src/build/unitree_guide_controller/CMakeFiles/uninstall.dir

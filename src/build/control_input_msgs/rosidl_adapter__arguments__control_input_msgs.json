@@ -1,6 +1,0 @@
-{
-  "package_name": "control_input_msgs",
-  "non_idl_tuples": [
-    "/home/danya/a1_ros2_foxy_sim/src/quadruped_ros2_control/commands/control_input_msgs:msg/Inputs.msg"
-  ]
-}
